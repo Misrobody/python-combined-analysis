@@ -1,7 +1,7 @@
 #!/bin/bash
 
-time python3 distrib/pyparse/src/pyparse/pyparse.py \
- -i distrib/UXsim \
+time python3 tools/pyparse/src/pyparse/pyparse.py \
+ -i apps/anytree \
  -o data/out \
  -m $1 -e
 

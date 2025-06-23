@@ -1,11 +1,14 @@
 #!/bin/bash
 
+OUTDIR="bin/pyparse-test-output"
+mkdir "$OUTDIR"
+
 time python3 tools/pyparse/src/pyparse/pyparse.py \
- -i distrib/UXsim/uxsim \
- -o data/out \
+ -i apps/UXsim/uxsim \
+ -o "$OUTDIR" \
  -m $1 -e
 
 time python3 tools/pyparse/src/pyparse/pyparse.py \
- -i distrib/anytree \
- -o data/out \
+ -i apps/anytree \
+ -o "$OUTDIR" \
  -m $1 -e

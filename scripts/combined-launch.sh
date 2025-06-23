@@ -1,5 +1,7 @@
 #!/bin/bash
 
-#./scripts/combined.sh data/anytree/operation-execution-log data/out
+# uxsim
+./scripts/combined-model.sh data/uxsim/operation-execution-logs data/uxsim/pyparse combined-uxsim
 
-./scripts/combined.sh data/uxsim-log/ data/uxsim
+# anytree
+./scripts/combined-model.sh data/anytree/operation-execution-log data/anytree/pyparse combined-anytree
