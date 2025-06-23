@@ -1,0 +1,198 @@
+Wed Nov 30 19:52:03 UTC 2022: start analysis of SWM commit 62c486c5713e185a379034d1ccc799f95260abc9
+Wed Nov 30 19:52:03 UTC 2022: preprocessing //esm-code/SWM --> //intermediate/esm-preprocessed/SWM-62c486c5713e185a379034d1ccc799f95260abc9
+Wed Nov 30 19:52:05 UTC 2022: start analysis of UVic commit caucluster_2.6_fixed
+Wed Nov 30 19:52:06 UTC 2022: preprocessing //esm-code/UVic/run_2.6_fixed --> //intermediate/esm-preprocessed/UVic-caucluster_2.6_fixed
+Wed Nov 30 19:52:10 UTC 2022: start analysis of UVic commit caucluster_2.7.1_fixed
+Wed Nov 30 19:52:11 UTC 2022: preprocessing //esm-code/UVic/run_2.7.1_fixed --> //intermediate/esm-preprocessed/UVic-caucluster_2.7.1_fixed
+Wed Nov 30 19:52:16 UTC 2022: start analysis of UVic commit caucluster_2.7.2_fixed
+Wed Nov 30 19:52:18 UTC 2022: preprocessing //esm-code/UVic/run_2.7.2_fixed --> //intermediate/esm-preprocessed/UVic-caucluster_2.7.2_fixed
+Wed Nov 30 19:52:23 UTC 2022: start analysis of UVic commit caucluster_2.7.3-fixed
+Wed Nov 30 19:52:24 UTC 2022: preprocessing //esm-code/UVic/run_2.7.3_fixed --> //intermediate/esm-preprocessed/UVic-caucluster_2.7.3-fixed
+Wed Nov 30 19:52:29 UTC 2022: start analysis of UVic commit caucluster_2.7.4_fixed
+Wed Nov 30 19:52:31 UTC 2022: preprocessing //esm-code/UVic/run_2.7.4_fixed --> //intermediate/esm-preprocessed/UVic-caucluster_2.7.4_fixed
+Wed Nov 30 19:52:36 UTC 2022: start analysis of UVic commit caucluster_2.7.5_fixed
+Wed Nov 30 19:52:38 UTC 2022: preprocessing //esm-code/UVic/run_2.7.5-fixed --> //intermediate/esm-preprocessed/UVic-caucluster_2.7.5_fixed
+Wed Nov 30 19:52:43 UTC 2022: start analysis of UVic commit caucluster_2.7_fixed
+Wed Nov 30 19:52:44 UTC 2022: preprocessing //esm-code/UVic/run_2.7_fixed --> //intermediate/esm-preprocessed/UVic-caucluster_2.7_fixed
+Wed Nov 30 19:52:50 UTC 2022: start analysis of UVic commit caucluster_2.8
+Wed Nov 30 19:52:52 UTC 2022: preprocessing //esm-code/UVic/run_2.8 --> //intermediate/esm-preprocessed/UVic-caucluster_2.8
+Wed Nov 30 19:52:57 UTC 2022: start analysis of UVic commit caucluster_2.9
+Wed Nov 30 19:53:00 UTC 2022: preprocessing //esm-code/UVic/run_2.9 --> //intermediate/esm-preprocessed/UVic-caucluster_2.9
+Wed Nov 30 19:53:06 UTC 2022: start analysis of UVic commit caucluster_2.9.1
+Wed Nov 30 19:53:09 UTC 2022: preprocessing //esm-code/UVic/run_2.9.1 --> //intermediate/esm-preprocessed/UVic-caucluster_2.9.1
+Wed Nov 30 19:53:15 UTC 2022: start analysis of UVic commit caucluster_2.9.2
+Wed Nov 30 19:53:19 UTC 2022: preprocessing //esm-code/UVic/run_2.9.2 --> //intermediate/esm-preprocessed/UVic-caucluster_2.9.2
+Wed Nov 30 19:53:24 UTC 2022: start analysis of MITgcm variant tutorial_advection_in_gyre
+Wed Nov 30 19:53:25 UTC 2022: configuring MITgcm code for variant tutorial_advection_in_gyre and option file linux_amd64_gfortran.
+Wed Nov 30 19:55:28 UTC 2022: preprocessing //esm-code/MITgcm/verification/tutorial_advection_in_gyre/build --> //intermediate/esm-preprocessed/MITgcm-tutorial_advection_in_gyre
+Wed Nov 30 19:55:53 UTC 2022: start analysis of MITgcm variant tutorial_baroclinic_gyre
+Wed Nov 30 19:55:53 UTC 2022: configuring MITgcm code for variant tutorial_baroclinic_gyre and option file linux_amd64_gfortran.
+Wed Nov 30 19:58:00 UTC 2022: preprocessing //esm-code/MITgcm/verification/tutorial_baroclinic_gyre/build --> //intermediate/esm-preprocessed/MITgcm-tutorial_baroclinic_gyre
+Wed Nov 30 19:58:24 UTC 2022: start analysis of MITgcm variant tutorial_barotropic_gyre
+Wed Nov 30 19:58:24 UTC 2022: configuring MITgcm code for variant tutorial_barotropic_gyre and option file linux_amd64_gfortran.
+Wed Nov 30 20:00:02 UTC 2022: preprocessing //esm-code/MITgcm/verification/tutorial_barotropic_gyre/build --> //intermediate/esm-preprocessed/MITgcm-tutorial_barotropic_gyre
+Wed Nov 30 20:00:24 UTC 2022: start analysis of MITgcm variant tutorial_cfc_offline
+Wed Nov 30 20:00:24 UTC 2022: configuring MITgcm code for variant tutorial_cfc_offline and option file linux_amd64_gfortran.
+Wed Nov 30 20:02:12 UTC 2022: preprocessing //esm-code/MITgcm/verification/tutorial_cfc_offline/build --> //intermediate/esm-preprocessed/MITgcm-tutorial_cfc_offline
+Wed Nov 30 20:02:35 UTC 2022: start analysis of MITgcm variant tutorial_deep_convection
+Wed Nov 30 20:02:36 UTC 2022: configuring MITgcm code for variant tutorial_deep_convection and option file linux_amd64_gfortran.
+Wed Nov 30 20:04:45 UTC 2022: preprocessing //esm-code/MITgcm/verification/tutorial_deep_convection/build --> //intermediate/esm-preprocessed/MITgcm-tutorial_deep_convection
+Wed Nov 30 20:05:09 UTC 2022: start analysis of MITgcm variant tutorial_dic_adjoffline
+Wed Nov 30 20:05:09 UTC 2022: configuring MITgcm code for variant tutorial_dic_adjoffline and option file linux_amd64_gfortran.
+Wed Nov 30 20:07:22 UTC 2022: preprocessing //esm-code/MITgcm/verification/tutorial_dic_adjoffline/build --> //intermediate/esm-preprocessed/MITgcm-tutorial_dic_adjoffline
+Wed Nov 30 20:07:53 UTC 2022: start analysis of MITgcm variant tutorial_global_oce_biogeo
+Wed Nov 30 20:07:53 UTC 2022: configuring MITgcm code for variant tutorial_global_oce_biogeo and option file linux_amd64_gfortran.
+Wed Nov 30 20:10:18 UTC 2022: preprocessing //esm-code/MITgcm/verification/tutorial_global_oce_biogeo/build --> //intermediate/esm-preprocessed/MITgcm-tutorial_global_oce_biogeo
+Wed Nov 30 20:10:47 UTC 2022: start analysis of MITgcm variant tutorial_global_oce_in_p
+Wed Nov 30 20:10:47 UTC 2022: configuring MITgcm code for variant tutorial_global_oce_in_p and option file linux_amd64_gfortran.
+Wed Nov 30 20:12:33 UTC 2022: preprocessing //esm-code/MITgcm/verification/tutorial_global_oce_in_p/build --> //intermediate/esm-preprocessed/MITgcm-tutorial_global_oce_in_p
+Wed Nov 30 20:12:54 UTC 2022: start analysis of MITgcm variant tutorial_global_oce_latlon
+Wed Nov 30 20:12:55 UTC 2022: configuring MITgcm code for variant tutorial_global_oce_latlon and option file linux_amd64_gfortran.
+Wed Nov 30 20:14:58 UTC 2022: preprocessing //esm-code/MITgcm/verification/tutorial_global_oce_latlon/build --> //intermediate/esm-preprocessed/MITgcm-tutorial_global_oce_latlon
+Wed Nov 30 20:15:23 UTC 2022: start analysis of MITgcm variant tutorial_held_suarez_cs
+Wed Nov 30 20:15:23 UTC 2022: configuring MITgcm code for variant tutorial_held_suarez_cs and option file linux_amd64_gfortran.
+Wed Nov 30 20:18:02 UTC 2022: preprocessing //esm-code/MITgcm/verification/tutorial_held_suarez_cs/build --> //intermediate/esm-preprocessed/MITgcm-tutorial_held_suarez_cs
+Wed Nov 30 20:18:30 UTC 2022: start analysis of MITgcm variant tutorial_plume_on_slope
+Wed Nov 30 20:18:30 UTC 2022: configuring MITgcm code for variant tutorial_plume_on_slope and option file linux_amd64_gfortran.
+Wed Nov 30 20:20:27 UTC 2022: preprocessing //esm-code/MITgcm/verification/tutorial_plume_on_slope/build --> //intermediate/esm-preprocessed/MITgcm-tutorial_plume_on_slope
+Wed Nov 30 20:20:51 UTC 2022: start analysis of MITgcm variant tutorial_reentrant_channel
+Wed Nov 30 20:20:51 UTC 2022: configuring MITgcm code for variant tutorial_reentrant_channel and option file linux_amd64_gfortran.
+Wed Nov 30 20:23:05 UTC 2022: preprocessing //esm-code/MITgcm/verification/tutorial_reentrant_channel/build --> //intermediate/esm-preprocessed/MITgcm-tutorial_reentrant_channel
+Wed Nov 30 20:23:31 UTC 2022: start analysis of MITgcm variant tutorial_rotating_tank
+Wed Nov 30 20:23:31 UTC 2022: configuring MITgcm code for variant tutorial_rotating_tank and option file linux_amd64_gfortran.
+Wed Nov 30 20:25:38 UTC 2022: preprocessing //esm-code/MITgcm/verification/tutorial_rotating_tank/build --> //intermediate/esm-preprocessed/MITgcm-tutorial_rotating_tank
+Wed Nov 30 20:26:02 UTC 2022: start analysis of MITgcm variant tutorial_tracer_adjsens
+Wed Nov 30 20:26:02 UTC 2022: configuring MITgcm code for variant tutorial_tracer_adjsens and option file linux_amd64_gfortran.
+Wed Nov 30 20:28:27 UTC 2022: preprocessing //esm-code/MITgcm/verification/tutorial_tracer_adjsens/build --> //intermediate/esm-preprocessed/MITgcm-tutorial_tracer_adjsens
+Wed Nov 30 20:28:58 UTC 2022: start analysis of MITgcm variant vermix
+Wed Nov 30 20:28:58 UTC 2022: configuring MITgcm code for variant vermix and option file linux_amd64_gfortran.
+Wed Nov 30 20:31:13 UTC 2022: preprocessing //esm-code/MITgcm/verification/vermix/build --> //intermediate/esm-preprocessed/MITgcm-vermix
+Wed Nov 30 20:31:40 UTC 2022: start analysis of MITgcm variant 1D_ocean_ice_column
+Wed Nov 30 20:31:40 UTC 2022: configuring MITgcm code for variant 1D_ocean_ice_column and option file linux_amd64_gfortran.
+Wed Nov 30 20:34:04 UTC 2022: preprocessing //esm-code/MITgcm/verification/1D_ocean_ice_column/build --> //intermediate/esm-preprocessed/MITgcm-1D_ocean_ice_column
+Wed Nov 30 20:34:33 UTC 2022: start analysis of MITgcm variant adjustment.128x64x1
+Wed Nov 30 20:34:33 UTC 2022: configuring MITgcm code for variant adjustment.128x64x1 and option file linux_amd64_gfortran.
+Wed Nov 30 20:36:07 UTC 2022: preprocessing //esm-code/MITgcm/verification/adjustment.128x64x1/build --> //intermediate/esm-preprocessed/MITgcm-adjustment.128x64x1
+Wed Nov 30 20:36:28 UTC 2022: start analysis of MITgcm variant adjustment.cs-32x32x1
+Wed Nov 30 20:36:28 UTC 2022: configuring MITgcm code for variant adjustment.cs-32x32x1 and option file linux_amd64_gfortran.
+Wed Nov 30 20:38:37 UTC 2022: preprocessing //esm-code/MITgcm/verification/adjustment.cs-32x32x1/build --> //intermediate/esm-preprocessed/MITgcm-adjustment.cs-32x32x1
+Wed Nov 30 20:39:01 UTC 2022: start analysis of MITgcm variant advect_cs
+Wed Nov 30 20:39:01 UTC 2022: configuring MITgcm code for variant advect_cs and option file linux_amd64_gfortran.
+Wed Nov 30 20:41:20 UTC 2022: preprocessing //esm-code/MITgcm/verification/advect_cs/build --> //intermediate/esm-preprocessed/MITgcm-advect_cs
+Wed Nov 30 20:41:48 UTC 2022: start analysis of MITgcm variant advect_xy
+Wed Nov 30 20:41:48 UTC 2022: configuring MITgcm code for variant advect_xy and option file linux_amd64_gfortran.
+Wed Nov 30 20:43:29 UTC 2022: preprocessing //esm-code/MITgcm/verification/advect_xy/build --> //intermediate/esm-preprocessed/MITgcm-advect_xy
+Wed Nov 30 20:43:51 UTC 2022: start analysis of MITgcm variant advect_xz
+Wed Nov 30 20:43:51 UTC 2022: configuring MITgcm code for variant advect_xz and option file linux_amd64_gfortran.
+Wed Nov 30 20:45:44 UTC 2022: preprocessing //esm-code/MITgcm/verification/advect_xz/build --> //intermediate/esm-preprocessed/MITgcm-advect_xz
+Wed Nov 30 20:46:05 UTC 2022: start analysis of MITgcm variant aim.5l_cs
+Wed Nov 30 20:46:05 UTC 2022: configuring MITgcm code for variant aim.5l_cs and option file linux_amd64_gfortran.
+Wed Nov 30 20:48:58 UTC 2022: preprocessing //esm-code/MITgcm/verification/aim.5l_cs/build --> //intermediate/esm-preprocessed/MITgcm-aim.5l_cs
+Wed Nov 30 20:49:30 UTC 2022: start analysis of MITgcm variant aim.5l_Equatorial_Channel
+Wed Nov 30 20:49:31 UTC 2022: configuring MITgcm code for variant aim.5l_Equatorial_Channel and option file linux_amd64_gfortran.
+Wed Nov 30 20:51:31 UTC 2022: preprocessing //esm-code/MITgcm/verification/aim.5l_Equatorial_Channel/build --> //intermediate/esm-preprocessed/MITgcm-aim.5l_Equatorial_Channel
+Wed Nov 30 20:51:55 UTC 2022: start analysis of MITgcm variant aim.5l_LatLon
+Wed Nov 30 20:51:56 UTC 2022: configuring MITgcm code for variant aim.5l_LatLon and option file linux_amd64_gfortran.
+Wed Nov 30 20:54:02 UTC 2022: preprocessing //esm-code/MITgcm/verification/aim.5l_LatLon/build --> //intermediate/esm-preprocessed/MITgcm-aim.5l_LatLon
+Wed Nov 30 20:54:27 UTC 2022: start analysis of MITgcm variant cfc_example
+Wed Nov 30 20:54:27 UTC 2022: configuring MITgcm code for variant cfc_example and option file linux_amd64_gfortran.
+Wed Nov 30 20:56:48 UTC 2022: preprocessing //esm-code/MITgcm/verification/cfc_example/build --> //intermediate/esm-preprocessed/MITgcm-cfc_example
+Wed Nov 30 20:57:17 UTC 2022: start analysis of MITgcm variant cheapAML_box
+Wed Nov 30 20:57:17 UTC 2022: configuring MITgcm code for variant cheapAML_box and option file linux_amd64_gfortran.
+Wed Nov 30 20:59:21 UTC 2022: preprocessing //esm-code/MITgcm/verification/cheapAML_box/build --> //intermediate/esm-preprocessed/MITgcm-cheapAML_box
+Wed Nov 30 20:59:46 UTC 2022: start analysis of MITgcm variant deep_anelastic
+Wed Nov 30 20:59:46 UTC 2022: configuring MITgcm code for variant deep_anelastic and option file linux_amd64_gfortran.
+Wed Nov 30 21:01:49 UTC 2022: preprocessing //esm-code/MITgcm/verification/deep_anelastic/build --> //intermediate/esm-preprocessed/MITgcm-deep_anelastic
+Wed Nov 30 21:02:13 UTC 2022: start analysis of MITgcm variant dome
+Wed Nov 30 21:02:13 UTC 2022: configuring MITgcm code for variant dome and option file linux_amd64_gfortran.
+Wed Nov 30 21:04:45 UTC 2022: preprocessing //esm-code/MITgcm/verification/dome/build --> //intermediate/esm-preprocessed/MITgcm-dome
+Wed Nov 30 21:05:11 UTC 2022: start analysis of MITgcm variant exp2
+Wed Nov 30 21:05:11 UTC 2022: configuring MITgcm code for variant exp2 and option file linux_amd64_gfortran.
+Wed Nov 30 21:07:01 UTC 2022: preprocessing //esm-code/MITgcm/verification/exp2/build --> //intermediate/esm-preprocessed/MITgcm-exp2
+Wed Nov 30 21:07:23 UTC 2022: start analysis of MITgcm variant exp4
+Wed Nov 30 21:07:23 UTC 2022: configuring MITgcm code for variant exp4 and option file linux_amd64_gfortran.
+Wed Nov 30 21:09:39 UTC 2022: preprocessing //esm-code/MITgcm/verification/exp4/build --> //intermediate/esm-preprocessed/MITgcm-exp4
+Wed Nov 30 21:10:05 UTC 2022: start analysis of MITgcm variant fizhi-cs-32x32x40
+Wed Nov 30 21:10:05 UTC 2022: configuring MITgcm code for variant fizhi-cs-32x32x40 and option file linux_amd64_gfortran.
+Wed Nov 30 21:13:26 UTC 2022: preprocessing //esm-code/MITgcm/verification/fizhi-cs-32x32x40/build --> //intermediate/esm-preprocessed/MITgcm-fizhi-cs-32x32x40
+Wed Nov 30 21:13:55 UTC 2022: start analysis of MITgcm variant fizhi-cs-aqualev20
+Wed Nov 30 21:13:55 UTC 2022: configuring MITgcm code for variant fizhi-cs-aqualev20 and option file linux_amd64_gfortran.
+Wed Nov 30 21:17:14 UTC 2022: preprocessing //esm-code/MITgcm/verification/fizhi-cs-aqualev20/build --> //intermediate/esm-preprocessed/MITgcm-fizhi-cs-aqualev20
+Wed Nov 30 21:17:44 UTC 2022: start analysis of MITgcm variant fizhi-gridalt-hs
+Wed Nov 30 21:17:44 UTC 2022: configuring MITgcm code for variant fizhi-gridalt-hs and option file linux_amd64_gfortran.
+Wed Nov 30 21:21:22 UTC 2022: preprocessing //esm-code/MITgcm/verification/fizhi-gridalt-hs/build --> //intermediate/esm-preprocessed/MITgcm-fizhi-gridalt-hs
+Wed Nov 30 21:21:50 UTC 2022: start analysis of MITgcm variant flt_example
+Wed Nov 30 21:21:50 UTC 2022: configuring MITgcm code for variant flt_example and option file linux_amd64_gfortran.
+Wed Nov 30 21:23:39 UTC 2022: preprocessing //esm-code/MITgcm/verification/flt_example/build --> //intermediate/esm-preprocessed/MITgcm-flt_example
+Wed Nov 30 21:24:02 UTC 2022: start analysis of MITgcm variant front_relax
+Wed Nov 30 21:24:02 UTC 2022: configuring MITgcm code for variant front_relax and option file linux_amd64_gfortran.
+Wed Nov 30 21:26:14 UTC 2022: preprocessing //esm-code/MITgcm/verification/front_relax/build --> //intermediate/esm-preprocessed/MITgcm-front_relax
+Wed Nov 30 21:26:39 UTC 2022: start analysis of MITgcm variant global_ocean.90x40x15
+Wed Nov 30 21:26:39 UTC 2022: configuring MITgcm code for variant global_ocean.90x40x15 and option file linux_amd64_gfortran.
+Wed Nov 30 21:29:41 UTC 2022: preprocessing //esm-code/MITgcm/verification/global_ocean.90x40x15/build --> //intermediate/esm-preprocessed/MITgcm-global_ocean.90x40x15
+Wed Nov 30 21:30:12 UTC 2022: start analysis of MITgcm variant global_ocean.cs32x15
+Wed Nov 30 21:30:12 UTC 2022: configuring MITgcm code for variant global_ocean.cs32x15 and option file linux_amd64_gfortran.
+Wed Nov 30 21:33:39 UTC 2022: preprocessing //esm-code/MITgcm/verification/global_ocean.cs32x15/build --> //intermediate/esm-preprocessed/MITgcm-global_ocean.cs32x15
+Wed Nov 30 21:34:16 UTC 2022: start analysis of MITgcm variant global_ocean_ebm
+Wed Nov 30 21:34:17 UTC 2022: configuring MITgcm code for variant global_ocean_ebm and option file linux_amd64_gfortran.
+Wed Nov 30 21:36:21 UTC 2022: preprocessing //esm-code/MITgcm/verification/global_ocean_ebm/build --> //intermediate/esm-preprocessed/MITgcm-global_ocean_ebm
+Wed Nov 30 21:36:46 UTC 2022: start analysis of MITgcm variant global_oce_biogeo_bling
+Wed Nov 30 21:36:47 UTC 2022: configuring MITgcm code for variant global_oce_biogeo_bling and option file linux_amd64_gfortran.
+Wed Nov 30 21:39:10 UTC 2022: preprocessing //esm-code/MITgcm/verification/global_oce_biogeo_bling/build --> //intermediate/esm-preprocessed/MITgcm-global_oce_biogeo_bling
+Wed Nov 30 21:39:38 UTC 2022: start analysis of MITgcm variant global_with_exf
+Wed Nov 30 21:39:38 UTC 2022: configuring MITgcm code for variant global_with_exf and option file linux_amd64_gfortran.
+Wed Nov 30 21:42:10 UTC 2022: preprocessing //esm-code/MITgcm/verification/global_with_exf/build --> //intermediate/esm-preprocessed/MITgcm-global_with_exf
+Wed Nov 30 21:42:41 UTC 2022: start analysis of MITgcm variant halfpipe_streamice
+Wed Nov 30 21:42:41 UTC 2022: configuring MITgcm code for variant halfpipe_streamice and option file linux_amd64_gfortran.
+Wed Nov 30 21:44:23 UTC 2022: preprocessing //esm-code/MITgcm/verification/halfpipe_streamice/build --> //intermediate/esm-preprocessed/MITgcm-halfpipe_streamice
+Wed Nov 30 21:44:43 UTC 2022: start analysis of MITgcm variant hs94.128x64x5
+Wed Nov 30 21:44:43 UTC 2022: configuring MITgcm code for variant hs94.128x64x5 and option file linux_amd64_gfortran.
+Wed Nov 30 21:46:39 UTC 2022: preprocessing //esm-code/MITgcm/verification/hs94.128x64x5/build --> //intermediate/esm-preprocessed/MITgcm-hs94.128x64x5
+Wed Nov 30 21:47:02 UTC 2022: start analysis of MITgcm variant hs94.1x64x5
+Wed Nov 30 21:47:02 UTC 2022: configuring MITgcm code for variant hs94.1x64x5 and option file linux_amd64_gfortran.
+Wed Nov 30 21:49:08 UTC 2022: preprocessing //esm-code/MITgcm/verification/hs94.1x64x5/build --> //intermediate/esm-preprocessed/MITgcm-hs94.1x64x5
+Wed Nov 30 21:49:33 UTC 2022: start analysis of MITgcm variant hs94.cs-32x32x5
+Wed Nov 30 21:49:33 UTC 2022: configuring MITgcm code for variant hs94.cs-32x32x5 and option file linux_amd64_gfortran.
+Wed Nov 30 21:52:13 UTC 2022: preprocessing //esm-code/MITgcm/verification/hs94.cs-32x32x5/build --> //intermediate/esm-preprocessed/MITgcm-hs94.cs-32x32x5
+Wed Nov 30 21:52:42 UTC 2022: start analysis of MITgcm variant ideal_2D_oce
+Wed Nov 30 21:52:42 UTC 2022: configuring MITgcm code for variant ideal_2D_oce and option file linux_amd64_gfortran.
+Wed Nov 30 21:54:59 UTC 2022: preprocessing //esm-code/MITgcm/verification/ideal_2D_oce/build --> //intermediate/esm-preprocessed/MITgcm-ideal_2D_oce
+Wed Nov 30 21:55:25 UTC 2022: start analysis of MITgcm variant internal_wave
+Wed Nov 30 21:55:25 UTC 2022: configuring MITgcm code for variant internal_wave and option file linux_amd64_gfortran.
+Wed Nov 30 21:57:28 UTC 2022: preprocessing //esm-code/MITgcm/verification/internal_wave/build --> //intermediate/esm-preprocessed/MITgcm-internal_wave
+Wed Nov 30 21:57:52 UTC 2022: start analysis of MITgcm variant inverted_barometer
+Wed Nov 30 21:57:52 UTC 2022: configuring MITgcm code for variant inverted_barometer and option file linux_amd64_gfortran.
+Wed Nov 30 21:59:55 UTC 2022: preprocessing //esm-code/MITgcm/verification/inverted_barometer/build --> //intermediate/esm-preprocessed/MITgcm-inverted_barometer
+Wed Nov 30 22:00:19 UTC 2022: start analysis of MITgcm variant isomip
+Wed Nov 30 22:00:19 UTC 2022: configuring MITgcm code for variant isomip and option file linux_amd64_gfortran.
+Wed Nov 30 22:02:58 UTC 2022: preprocessing //esm-code/MITgcm/verification/isomip/build --> //intermediate/esm-preprocessed/MITgcm-isomip
+Wed Nov 30 22:03:26 UTC 2022: start analysis of MITgcm variant lab_sea
+Wed Nov 30 22:03:26 UTC 2022: configuring MITgcm code for variant lab_sea and option file linux_amd64_gfortran.
+Wed Nov 30 22:06:24 UTC 2022: preprocessing //esm-code/MITgcm/verification/lab_sea/build --> //intermediate/esm-preprocessed/MITgcm-lab_sea
+Wed Nov 30 22:06:58 UTC 2022: start analysis of MITgcm variant matrix_example
+Wed Nov 30 22:06:58 UTC 2022: configuring MITgcm code for variant matrix_example and option file linux_amd64_gfortran.
+Wed Nov 30 22:08:49 UTC 2022: preprocessing //esm-code/MITgcm/verification/matrix_example/build --> //intermediate/esm-preprocessed/MITgcm-matrix_example
+Wed Nov 30 22:09:13 UTC 2022: start analysis of MITgcm variant MLAdjust
+Wed Nov 30 22:09:13 UTC 2022: configuring MITgcm code for variant MLAdjust and option file linux_amd64_gfortran.
+Wed Nov 30 22:11:53 UTC 2022: preprocessing //esm-code/MITgcm/verification/MLAdjust/build --> //intermediate/esm-preprocessed/MITgcm-MLAdjust
+Wed Nov 30 22:12:22 UTC 2022: start analysis of MITgcm variant natl_box
+Wed Nov 30 22:12:22 UTC 2022: configuring MITgcm code for variant natl_box and option file linux_amd64_gfortran.
+Wed Nov 30 22:14:47 UTC 2022: preprocessing //esm-code/MITgcm/verification/natl_box/build --> //intermediate/esm-preprocessed/MITgcm-natl_box
+Wed Nov 30 22:15:15 UTC 2022: start analysis of MITgcm variant offline_exf_seaice
+Wed Nov 30 22:15:15 UTC 2022: configuring MITgcm code for variant offline_exf_seaice and option file linux_amd64_gfortran.
+Wed Nov 30 22:17:58 UTC 2022: preprocessing //esm-code/MITgcm/verification/offline_exf_seaice/build --> //intermediate/esm-preprocessed/MITgcm-offline_exf_seaice
+Wed Nov 30 22:18:30 UTC 2022: start analysis of MITgcm variant seaice_itd
+Wed Nov 30 22:18:30 UTC 2022: configuring MITgcm code for variant seaice_itd and option file linux_amd64_gfortran.
+Wed Nov 30 22:21:12 UTC 2022: preprocessing //esm-code/MITgcm/verification/seaice_itd/build --> //intermediate/esm-preprocessed/MITgcm-seaice_itd
+Wed Nov 30 22:21:42 UTC 2022: start analysis of MITgcm variant seaice_obcs
+Wed Nov 30 22:21:42 UTC 2022: configuring MITgcm code for variant seaice_obcs and option file linux_amd64_gfortran.
+Wed Nov 30 22:24:40 UTC 2022: preprocessing //esm-code/MITgcm/verification/seaice_obcs/build --> //intermediate/esm-preprocessed/MITgcm-seaice_obcs
+Wed Nov 30 22:25:14 UTC 2022: start analysis of MITgcm variant shelfice_2d_remesh
+Wed Nov 30 22:25:14 UTC 2022: configuring MITgcm code for variant shelfice_2d_remesh and option file linux_amd64_gfortran.
+Wed Nov 30 22:27:36 UTC 2022: preprocessing //esm-code/MITgcm/verification/shelfice_2d_remesh/build --> //intermediate/esm-preprocessed/MITgcm-shelfice_2d_remesh
+Wed Nov 30 22:28:03 UTC 2022: start analysis of MITgcm variant short_surf_wave
+Wed Nov 30 22:28:03 UTC 2022: configuring MITgcm code for variant short_surf_wave and option file linux_amd64_gfortran.
+Wed Nov 30 22:30:19 UTC 2022: preprocessing //esm-code/MITgcm/verification/short_surf_wave/build --> //intermediate/esm-preprocessed/MITgcm-short_surf_wave
+Wed Nov 30 22:30:43 UTC 2022: start analysis of MITgcm variant solid-body.cs-32x32x1
+Wed Nov 30 22:30:43 UTC 2022: configuring MITgcm code for variant solid-body.cs-32x32x1 and option file linux_amd64_gfortran.
+Wed Nov 30 22:33:01 UTC 2022: preprocessing //esm-code/MITgcm/verification/solid-body.cs-32x32x1/build --> //intermediate/esm-preprocessed/MITgcm-solid-body.cs-32x32x1

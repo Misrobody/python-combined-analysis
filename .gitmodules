@@ -1,0 +1,6 @@
+[submodule "apps/anytree"]
+	path = apps/anytree
+	url = git@github.com:c0fec0de/anytree.git
+[submodule "apps/UXsim"]
+	path = apps/UXsim
+	url = git@github.com:toruseo/UXsim.git
