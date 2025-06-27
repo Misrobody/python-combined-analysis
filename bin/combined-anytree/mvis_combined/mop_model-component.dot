@@ -2,92 +2,77 @@ digraph "mop_model" {
 	rankdir="LR"
 	node [fillcolor="white",shape="box",color="#000000",style="filled"]
 	edge [color="#000000",style="solid",arrowhead="open"]
-	"anytreetests.test_node_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_node
-"]
-	"tokenize_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-tokenize.tokenize
-"]
-	"anytreetests.test_pickle_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_pickle
-"]
-	"anytreenode.node.Node_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreenode.node.Node
-"]
-	"anytreetests.test_util_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_util
-"]
-	"anytree.resolver_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytree.resolver
-"]
-	"anytreenode.lightnodemixin_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreenode.lightnodemixin
-"]
-	"anytreenode.nodemixin_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreenode.nodemixin
-"]
-	"threading_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-threading.threading
-"]
-	"anytree.exporter.dictexporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytree.exporter.dictexporter
+	"anytree.node.symlinknode_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.node.symlinknode
 "]
 	"anytree.render_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
 anytree.render
 "]
-	"anytreetests.test_iterators_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_iterators
+	"anytree.exporter.mermaidexporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.exporter.mermaidexporter
 "]
-	"poplib_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-poplib.poplib
+	"cmath_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+cmath.cmath
 "]
-	"anytree.search_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytree.search
+	"anytree.node.symlinknodemixin_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.node.symlinknodemixin
 "]
-	"anytreetests.test_mermaidexporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_mermaidexporter
+	"anytree.tests.test_dotexport_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_dotexport
 "]
-	"test2ref_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-test2ref.test2ref
+	"pytest_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+pytest.pytest
 "]
-	"anytreetests.test_jsonexporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_jsonexporter
+	"anytree.node.nodemixin_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.node.nodemixin
 "]
-	"anytreenode.anynode.AnyNode_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreenode.anynode.AnyNode
+	"anytree.tests.test_node_attach_detach_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_node_attach_detach
 "]
-	"locale_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-locale.locale
+	"anytree.node.lightnodemixin_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.node.lightnodemixin
 "]
-	"anytreetests.test_dictexporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_dictexporter
+	"anytree.tests.test_resolver_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_resolver
 "]
-	"anytreeutil.__init___0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreeutil.__init__
+	"anytree.resolver.Resolver_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.resolver.Resolver
 "]
-	"builtins_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-builtins.builtins
+	"anytree.tests.test_special_methods_access_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_special_methods_access
+"]
+	"anytree.tests.test_uniquedotexporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_uniquedotexporter
+"]
+	"anytree.tests.test_search_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_search
+"]
+	"anytree.tests.helper_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.helper
+"]
+	"anytree.tests.test_node_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_node
+"]
+	"tokenize_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+tokenize.tokenize
+"]
+	"anytree.tests.test_lightnode_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_lightnode
+"]
+	"anytree.node.node.Node_0" [fillcolor="#ffffff",color="#000000",label="<<assembly component>>
+anytree.node.node.Node
+"]
+	"shutil_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+shutil.shutil
 "]
 	"anytree.iterators.abstractiter.AbstractIter_0" [fillcolor="#ffffff",color="#000000",label="<<assembly component>>
 anytree.iterators.abstractiter.AbstractIter
 "]
-	"anytreeiterators.postorderiter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreeiterators.postorderiter
+	"anytree.tests.test_node_sep_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_node_sep
 "]
-	"anytreeimporter.jsonimporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreeimporter.jsonimporter
-"]
-	"tracemalloc_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-tracemalloc.tracemalloc
-"]
-	"anytreetests.test_dotexporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_dotexporter
-"]
-	"anytree.exporter.dotexporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytree.exporter.dotexporter
-"]
-	"anytreeiterators.zigzaggroupiter.ZigZagGroupIter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreeiterators.zigzaggroupiter.ZigZagGroupIter
+	"anytree.render.RenderTree_0" [fillcolor="#ffffff",color="#000000",label="<<assembly component>>
+anytree.render.RenderTree
 "]
 	"++unknown-component++_0" [fillcolor="#ffffff",color="#000000",label="<<assembly component>>
 .++unknown-component++
@@ -95,772 +80,689 @@ anytreeiterators.zigzaggroupiter.ZigZagGroupIter
 	"anytree.node.nodemixin.NodeMixin_0" [fillcolor="#ffffff",color="#000000",label="<<assembly component>>
 anytree.node.nodemixin.NodeMixin
 "]
-	"anytreetests.test_special_methods_access_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_special_methods_access
-"]
-	"anytreenode.symlinknodemixin_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreenode.symlinknodemixin
-"]
-	"configparser_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-configparser.configparser
-"]
-	"anytreetests.test_resolver_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_resolver
-"]
-	"anytreetests.test_lightnode_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_lightnode
-"]
 	"anytree.exporter.dotexporter.DotExporter_0" [fillcolor="#ffffff",color="#000000",label="<<assembly component>>
 anytree.exporter.dotexporter.DotExporter
 "]
-	"anytree.cachedsearch_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytree.cachedsearch
-"]
-	"anytreetests.test_cachedsearch_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_cachedsearch
-"]
-	"anytreetests.helper_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.helper
-"]
-	"anytreetests.test_search_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_search
-"]
-	"anytreeiterators.levelordergroupiter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreeiterators.levelordergroupiter
-"]
-	"anytreeiterators.abstractiter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreeiterators.abstractiter
-"]
-	"anytreetests.test_walker_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_walker
-"]
-	"inspect_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-inspect.inspect
-"]
-	"anytree.exporter.mermaidexporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytree.exporter.mermaidexporter
-"]
-	"anytreetests.test_jsonimporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_jsonimporter
-"]
-	"anytreeimporter.jsonimporter.JsonImporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreeimporter.jsonimporter.JsonImporter
-"]
-	"pstats_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-pstats.pstats
-"]
-	"cmath_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-cmath.cmath
-"]
-	"_ast_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-_ast._ast
-"]
-	"anytreetests.test_node_attach_detach_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_node_attach_detach
-"]
-	"anytreetests.test_node_symlink_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_node_symlink
-"]
-	"anytreeiterators.preorderiter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreeiterators.preorderiter
-"]
-	"anytreeiterators.preorderiter.PreOrderIter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreeiterators.preorderiter.PreOrderIter
-"]
-	"anytreetests.test_dictimporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_dictimporter
-"]
-	"copy_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-copy.copy
-"]
-	"anytreetests.test_special_methods_access.MyMapping_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_special_methods_access.MyMapping
-"]
-	"conftest_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-conftest.conftest
-"]
-	"anytreetests.test_uniquedotexporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_uniquedotexporter
-"]
-	"pytest_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-pytest.pytest
-"]
-	"anytreetests.test_node_sep_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_node_sep
-"]
-	"anytreetests.test_render_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_render
-"]
-	"anytree.resolver.Resolver_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytree.resolver.Resolver
-"]
-	"anytree.exporter.mermaidexporter.MermaidExporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytree.exporter.mermaidexporter.MermaidExporter
-"]
-	"logging_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-logging.logging
-"]
-	"tempfile_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-tempfile.tempfile
-"]
-	"anytreenode.anynode_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreenode.anynode
-"]
-	"anytreenode.util_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreenode.util
-"]
-	"anytree.iterators.preorderiter.PreOrderIter_0" [fillcolor="#ffffff",color="#000000",label="<<assembly component>>
-anytree.iterators.preorderiter.PreOrderIter
-"]
-	"anytreenode.nodemixin.NodeMixin_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreenode.nodemixin.NodeMixin
-"]
-	"io_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-io.io
-"]
-	"anytreeiterators.zigzaggroupiter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreeiterators.zigzaggroupiter
-"]
-	"anytreetests.test_node_integrity_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_node_integrity
-"]
-	"unittest_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-unittest.unittest
-"]
-	"anytree.exporter.jsonexporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytree.exporter.jsonexporter
-"]
-	"compileall_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-compileall.compileall
-"]
-	"anytree.render.RenderTree_0" [fillcolor="#ffffff",color="#000000",label="<<assembly component>>
-anytree.render.RenderTree
-"]
-	"anytree.walker_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytree.walker
-"]
-	"anytree.config_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytree.config
-"]
-	"anytreeimporter.dictimporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreeimporter.dictimporter
-"]
-	"anytreetests.test_dictexporter.MyClass_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_dictexporter.MyClass
-"]
-	"anytreeiterators.levelordergroupiter.LevelOrderGroupIter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreeiterators.levelordergroupiter.LevelOrderGroupIter
-"]
-	"anytree.walker.WalkError_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytree.walker.WalkError
-"]
-	"anytreetests.test_dotexport_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_dotexport
-"]
-	"anytree.exporter.dictexporter.DictExporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytree.exporter.dictexporter.DictExporter
-"]
-	"anytree.search.CountError_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytree.search.CountError
-"]
-	"anytreeiterators.postorderiter.PostOrderIter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreeiterators.postorderiter.PostOrderIter
-"]
-	"anytreenode.exceptions.LoopError_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreenode.exceptions.LoopError
-"]
-	"anytreeimporter.dictimporter.DictImporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreeimporter.dictimporter.DictImporter
-"]
-	"anytree.render.ContStyle_0" [fillcolor="#ffffff",color="#000000",label="<<assembly component>>
-anytree.render.ContStyle
-"]
-	"anytreeiterators.levelorderiter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreeiterators.levelorderiter
-"]
-	"anytree.dotexport_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytree.dotexport
-"]
-	"anytreenode.symlinknode_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreenode.symlinknode
-"]
-	"anytreenode.exceptions.TreeError_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreenode.exceptions.TreeError
-"]
-	"decimal_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-decimal.decimal
-"]
-	"anytreetests.test_examples_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_examples
-"]
-	"anytree.node.node.Node_0" [fillcolor="#ffffff",color="#000000",label="<<assembly component>>
-anytree.node.node.Node
-"]
-	"anytree_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytree.anytree
-"]
-	"anytreenode.node_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreenode.node
-"]
-	"anytree.iterators.levelorderiter.LevelOrderIter_0" [fillcolor="#ffffff",color="#000000",label="<<assembly component>>
-anytree.iterators.levelorderiter.LevelOrderIter
-"]
-	"uu_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-uu.uu
-"]
-	"anytree.walker.Walker_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytree.walker.Walker
-"]
-	"imp_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-imp.imp
-"]
-	"anytree.render.DoubleStyle_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytree.render.DoubleStyle
-"]
-	"os_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-os.os
-"]
-	"anytreeiterators.levelorderiter.LevelOrderIter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreeiterators.levelorderiter.LevelOrderIter
-"]
-	"functools_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-functools.functools
-"]
-	"anytree.render.AbstractStyle_0" [fillcolor="#ffffff",color="#000000",label="<<assembly component>>
-anytree.render.AbstractStyle
-"]
-	"anytree.render.ContRoundStyle_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytree.render.ContRoundStyle
-"]
-	"platform_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-platform.platform
-"]
-	"shutil_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-shutil.shutil
+	"anytree.importer.dictimporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.importer.dictimporter
 "]
 	"calendar_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
 calendar.calendar
 "]
+	"anytree.exporter.jsonexporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.exporter.jsonexporter
+"]
+	"tracemalloc_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+tracemalloc.tracemalloc
+"]
+	"anytree.node.exceptions.TreeError_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.node.exceptions.TreeError
+"]
+	"anytree.tests.test_dictexporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_dictexporter
+"]
+	"anytree.tests.test_dictexporter.MyClass_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_dictexporter.MyClass
+"]
+	"anytree.iterators.abstractiter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.iterators.abstractiter
+"]
+	"anytree.search_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.search
+"]
+	"anytree.resolver_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.resolver
+"]
+	"anytree.exporter.dotexporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.exporter.dotexporter
+"]
+	"anytree.dotexport_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.dotexport
+"]
+	"anytree.tests.test_node_integrity_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_node_integrity
+"]
+	"anytree.tests.test_render_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_render
+"]
+	"anytree.importer.jsonimporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.importer.jsonimporter
+"]
+	"anytree.tests.test_cachedsearch_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_cachedsearch
+"]
+	"anytree.cachedsearch_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.cachedsearch
+"]
+	"anytree.tests.test_iterators_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_iterators
+"]
+	"anytree.iterators.preorderiter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.iterators.preorderiter
+"]
+	"anytree.iterators.postorderiter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.iterators.postorderiter
+"]
+	"anytree.tests.test_dotexporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_dotexporter
+"]
+	"anytree.tests.test_dictimporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_dictimporter
+"]
+	"anytree.iterators.preorderiter.PreOrderIter_0" [fillcolor="#ffffff",color="#000000",label="<<assembly component>>
+anytree.iterators.preorderiter.PreOrderIter
+"]
+	"anytree.tests.test_mermaidexporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_mermaidexporter
+"]
+	"anytree.exporter.mermaidexporter.MermaidExporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.exporter.mermaidexporter.MermaidExporter
+"]
+	"anytree.importer.dictimporter.DictImporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.importer.dictimporter.DictImporter
+"]
+	"anytree.node.util_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.node.util
+"]
+	"anytree.tests.test_jsonimporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_jsonimporter
+"]
+	"anytree.exporter.dictexporter.DictExporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.exporter.dictexporter.DictExporter
+"]
+	"mailcap_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+mailcap.mailcap
+"]
 	"anytree.render.AsciiStyle_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
 anytree.render.AsciiStyle
+"]
+	"anytree.exporter.dictexporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.exporter.dictexporter
+"]
+	"anytree.tests.test_walker_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_walker
+"]
+	"test2ref_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+test2ref.test2ref
+"]
+	"anytree.tests.test_special_methods_access.MyMapping_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_special_methods_access.MyMapping
+"]
+	"anytree.tests.test_util_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_util
+"]
+	"anytree.util.__init___0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.util.__init__
+"]
+	"anytree.tests.test_pickle_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_pickle
+"]
+	"ntpath_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+ntpath.ntpath
+"]
+	"anytree.iterators.levelordergroupiter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.iterators.levelordergroupiter
+"]
+	"sqlite3_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+sqlite3.sqlite3
+"]
+	"anytree.tests.test_jsonexporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_jsonexporter
+"]
+	"anytree.render.ContStyle_0" [fillcolor="#ffffff",color="#000000",label="<<assembly component>>
+anytree.render.ContStyle
+"]
+	"conftest_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+conftest.conftest
+"]
+	"anytree.config_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.config
+"]
+	"unittest_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+unittest.unittest
+"]
+	"anytree.node.node_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.node.node
+"]
+	"anytree.iterators.zigzaggroupiter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.iterators.zigzaggroupiter
+"]
+	"anytree.iterators.levelordergroupiter.LevelOrderGroupIter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.iterators.levelordergroupiter.LevelOrderGroupIter
+"]
+	"mailbox_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+mailbox.mailbox
+"]
+	"anytree.search.CountError_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.search.CountError
+"]
+	"anytree.walker_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.walker
+"]
+	"anytree.node.anynode.AnyNode_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.node.anynode.AnyNode
+"]
+	"anytree.walker.WalkError_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.walker.WalkError
+"]
+	"anytree.importer.jsonimporter.JsonImporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.importer.jsonimporter.JsonImporter
+"]
+	"_operator_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+_operator._operator
+"]
+	"anytree.iterators.postorderiter.PostOrderIter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.iterators.postorderiter.PostOrderIter
+"]
+	"anytree.tests.test_node_symlink_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_node_symlink
+"]
+	"anytree.walker.Walker_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.walker.Walker
+"]
+	"anytree.node.exceptions.LoopError_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.node.exceptions.LoopError
+"]
+	"tempfile_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+tempfile.tempfile
+"]
+	"anytree_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.anytree
+"]
+	"anytree.tests.test_examples_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_examples
+"]
+	"anytree.node.anynode_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.node.anynode
+"]
+	"audioop_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+audioop.audioop
+"]
+	"builtins_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+builtins.builtins
+"]
+	"os_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+os.os
+"]
+	"functools_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+functools.functools
+"]
+	"anytree.iterators.levelorderiter.LevelOrderIter_0" [fillcolor="#ffffff",color="#000000",label="<<assembly component>>
+anytree.iterators.levelorderiter.LevelOrderIter
+"]
+	"anytree.iterators.levelorderiter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.iterators.levelorderiter
+"]
+	"anytree.render.AbstractStyle_0" [fillcolor="#ffffff",color="#000000",label="<<assembly component>>
+anytree.render.AbstractStyle
+"]
+	"copy_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+copy.copy
+"]
+	"anytree.render.DoubleStyle_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.render.DoubleStyle
+"]
+	"anytree.iterators.zigzaggroupiter.ZigZagGroupIter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.iterators.zigzaggroupiter.ZigZagGroupIter
 "]
 	"anytree.exporter.jsonexporter.JsonExporter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
 anytree.exporter.jsonexporter.JsonExporter
 "]
-	"_sqlite3_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-_sqlite3._sqlite3
+	"anytree.render.ContRoundStyle_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.render.ContRoundStyle
 "]
-	"anytreeiterators.abstractiter.AbstractIter_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreeiterators.abstractiter.AbstractIter
+	"anytree.tests.test_node.EqOverwrittingNode_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_node.EqOverwrittingNode
 "]
-	"anytreetests.test_node.EqOverwrittingNode_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_node.EqOverwrittingNode
+	"anytree.tests.test_lightnode.LightNode_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_lightnode.LightNode
 "]
 	"anytree.resolver.ResolverError_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
 anytree.resolver.ResolverError
 "]
-	"anytreenode.symlinknode.SymlinkNode_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreenode.symlinknode.SymlinkNode
-"]
 	"anytree.resolver.ChildResolverError_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
 anytree.resolver.ChildResolverError
 "]
-	"anytreetests.test_lightnode.LightNode_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_lightnode.LightNode
+	"anytree.node.symlinknode.SymlinkNode_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.node.symlinknode.SymlinkNode
 "]
-	"anytreetests.test_special_methods_access.MyNode_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
-anytreetests.test_special_methods_access.MyNode
+	"anytree.tests.test_special_methods_access.MyNode_0" [fillcolor="#ffc0ff",color="#ff00ff",label="<<assembly component>>
+anytree.tests.test_special_methods_access.MyNode
 "]
-	"anytreetests.test_node_0" -> "tokenize_0" [label="2"]
-	"anytreetests.test_pickle_0" -> "anytreenode.node.Node_0" [label="3"]
-	"anytreetests.test_util_0" -> "anytreenode.node.Node_0" [label="4"]
-	"anytree.resolver_0" -> "anytree.resolver_0" [label="1"]
-	"anytreenode.lightnodemixin_0" -> "tokenize_0" [label="1"]
-	"anytreenode.lightnodemixin_0" -> "anytreenode.nodemixin_0" [label="1"]
-	"anytreenode.nodemixin_0" -> "tokenize_0" [label="1"]
-	"anytreenode.nodemixin_0" -> "threading_0" [label="1"]
-	"anytree.exporter.dictexporter_0" -> "anytree.exporter.dictexporter_0" [label="1"]
+	"anytree.node.symlinknode_0" -> "anytree.render_0" [label="1"]
+	"anytree.exporter.mermaidexporter_0" -> "cmath_0" [label="1"]
+	"anytree.node.symlinknodemixin_0" -> "cmath_0" [label="1"]
+	"anytree.tests.test_dotexport_0" -> "pytest_0" [label="1"]
+	"anytree.render_0" -> "cmath_0" [label="3"]
+	"anytree.node.nodemixin_0" -> "anytree.node.nodemixin_0" [label="1"]
+	"anytree.tests.test_node_attach_detach_0" -> "cmath_0" [label="1"]
+	"anytree.node.lightnodemixin_0" -> "cmath_0" [label="1"]
+	"anytree.tests.test_resolver_0" -> "anytree.resolver.Resolver_0" [label="1"]
+	"anytree.tests.test_special_methods_access_0" -> "anytree.tests.test_uniquedotexporter_0" [label="1"]
+	"anytree.tests.test_search_0" -> "anytree.tests.helper_0" [label="2"]
+	"anytree.tests.test_special_methods_access_0" -> "cmath_0" [label="1"]
+	"anytree.tests.test_node_0" -> "tokenize_0" [label="1"]
+	"anytree.tests.test_node_0" -> "cmath_0" [label="1"]
+	"anytree.tests.test_lightnode_0" -> "anytree.node.node.Node_0" [label="4"]
 	"anytree.render_0" -> "anytree.render_0" [label="1"]
-	"anytreetests.test_iterators_0" -> "poplib_0" [label="6"]
-	"anytree.resolver_0" -> "anytree.search_0" [label="4"]
-	"anytreetests.test_mermaidexporter_0" -> "test2ref_0" [label="1"]
-	"anytreetests.test_jsonexporter_0" -> "anytreenode.anynode.AnyNode_0" [label="9"]
-	"anytreetests.test_pickle_0" -> "locale_0" [label="2"]
-	"anytreetests.test_dictexporter_0" -> "anytree.exporter.dictexporter_0" [label="1"]
-	"anytreeutil.__init___0" -> "builtins_0" [label="1"]
+	"anytree.tests.test_dotexport_0" -> "shutil_0" [label="1"]
 	"anytree.iterators.abstractiter.AbstractIter_0" -> "anytree.iterators.abstractiter.AbstractIter_0" [label="9"]
-	"anytreeiterators.postorderiter_0" -> "anytree.render_0" [label="1"]
-	"anytreeimporter.jsonimporter_0" -> "tracemalloc_0" [label="1"]
-	"anytreetests.test_dotexporter_0" -> "anytree.exporter.dotexporter_0" [label="1"]
-	"anytreetests.test_iterators_0" -> "anytreeiterators.zigzaggroupiter.ZigZagGroupIter_0" [label="6"]
+	"anytree.tests.test_node_sep_0" -> "anytree.render.RenderTree_0" [label="1"]
+	"anytree.tests.test_resolver_0" -> "anytree.node.node.Node_0" [label="3"]
+	"anytree.tests.test_node_attach_detach_0" -> "anytree.node.node.Node_0" [label="4"]
 	"++unknown-component++_0" -> "anytree.node.nodemixin.NodeMixin_0" [label="6"]
-	"anytreetests.test_special_methods_access_0" -> "anytreenode.node.Node_0" [label="5"]
-	"anytree.exporter.dotexporter_0" -> "anytree.search_0" [label="1"]
-	"anytreenode.symlinknodemixin_0" -> "tokenize_0" [label="1"]
-	"anytreenode.nodemixin_0" -> "anytreenode.nodemixin_0" [label="1"]
-	"anytreetests.test_dictexporter_0" -> "tokenize_0" [label="1"]
-	"anytree.exporter.dotexporter_0" -> "locale_0" [label="1"]
-	"anytreetests.test_special_methods_access_0" -> "configparser_0" [label="1"]
-	"anytreetests.test_resolver_0" -> "anytree.render_0" [label="8"]
-	"anytreetests.test_iterators_0" -> "anytreenode.node.Node_0" [label="9"]
-	"anytreetests.test_lightnode_0" -> "anytreenode.node.Node_0" [label="9"]
-	"anytree.exporter.dotexporter.DotExporter_0" -> "anytree.node.nodemixin.NodeMixin_0" [label="6"]
-	"anytree.resolver_0" -> "anytree.cachedsearch_0" [label="1"]
-	"anytreetests.test_cachedsearch_0" -> "anytreetests.helper_0" [label="2"]
-	"anytreetests.test_iterators_0" -> "tokenize_0" [label="2"]
-	"anytreetests.test_node_0" -> "anytreenode.node.Node_0" [label="7"]
-	"anytreetests.test_search_0" -> "anytree.search_0" [label="3"]
-	"anytreetests.test_search_0" -> "anytreetests.helper_0" [label="3"]
-	"anytreetests.test_jsonexporter_0" -> "threading_0" [label="1"]
-	"anytree.search_0" -> "anytree.search_0" [label="1"]
-	"anytreetests.test_node_0" -> "locale_0" [label="2"]
-	"anytree.render_0" -> "threading_0" [label="2"]
-	"anytreetests.test_node_0" -> "anytreetests.helper_0" [label="1"]
-	"anytreeiterators.levelordergroupiter_0" -> "anytreeiterators.abstractiter_0" [label="1"]
-	"anytreetests.test_walker_0" -> "anytreetests.helper_0" [label="6"]
-	"anytree.render_0" -> "tokenize_0" [label="1"]
-	"anytreetests.test_pickle_0" -> "inspect_0" [label="1"]
-	"anytree.exporter.mermaidexporter_0" -> "anytree.exporter.mermaidexporter_0" [label="1"]
-	"anytreetests.test_jsonimporter_0" -> "anytreeimporter.jsonimporter.JsonImporter_0" [label="2"]
-	"anytreetests.test_node_0" -> "pstats_0" [label="1"]
-	"anytreenode.lightnodemixin_0" -> "poplib_0" [label="1"]
-	"anytreetests.test_resolver_0" -> "cmath_0" [label="4"]
-	"anytreetests.test_special_methods_access_0" -> "_ast_0" [label="3"]
-	"anytreetests.test_node_attach_detach_0" -> "configparser_0" [label="1"]
-	"anytreetests.test_lightnode_0" -> "locale_0" [label="2"]
-	"anytreetests.test_node_symlink_0" -> "anytreenode.node.Node_0" [label="10"]
-	"anytreetests.test_resolver_0" -> "anytreetests.helper_0" [label="4"]
-	"anytreeiterators.preorderiter_0" -> "anytree.search_0" [label="1"]
-	"anytreenode.lightnodemixin_0" -> "anytreeiterators.preorderiter.PreOrderIter_0" [label="1"]
-	"anytreetests.test_dictimporter_0" -> "copy_0" [label="1"]
-	"anytreetests.test_special_methods_access_0" -> "anytreetests.test_special_methods_access.MyMapping_0" [label="4"]
-	"anytreeiterators.abstractiter_0" -> "anytreeiterators.abstractiter_0" [label="1"]
-	"anytree.render_0" -> "cmath_0" [label="1"]
-	"anytreetests.test_resolver_0" -> "anytreenode.node.Node_0" [label="3"]
-	"anytree.exporter.mermaidexporter_0" -> "configparser_0" [label="1"]
-	"conftest_0" -> "anytree.render_0" [label="1"]
-	"anytreetests.test_uniquedotexporter_0" -> "test2ref_0" [label="1"]
-	"anytreetests.test_uniquedotexporter_0" -> "anytree.exporter.dotexporter_0" [label="1"]
-	"conftest_0" -> "pytest_0" [label="1"]
-	"anytreetests.test_node_sep_0" -> "anytree.resolver_0" [label="6"]
-	"anytree.exporter.dotexporter_0" -> "anytreeiterators.preorderiter.PreOrderIter_0" [label="1"]
-	"anytreetests.test_mermaidexporter_0" -> "anytree.exporter.mermaidexporter_0" [label="1"]
-	"anytreetests.test_render_0" -> "anytree.render_0" [label="3"]
-	"anytree.cachedsearch_0" -> "anytree.cachedsearch_0" [label="1"]
-	"anytreetests.test_dotexporter_0" -> "anytreenode.node.Node_0" [label="1"]
-	"anytreetests.test_util_0" -> "anytreetests.helper_0" [label="5"]
-	"anytreetests.test_resolver_0" -> "anytree.resolver.Resolver_0" [label="1"]
-	"anytreenode.nodemixin_0" -> "anytreeiterators.preorderiter.PreOrderIter_0" [label="1"]
-	"anytree.resolver_0" -> "threading_0" [label="2"]
-	"anytreetests.test_special_methods_access_0" -> "tokenize_0" [label="1"]
-	"anytree.exporter.mermaidexporter_0" -> "tokenize_0" [label="1"]
-	"anytreetests.test_dotexporter_0" -> "anytree.exporter.dotexporter.DotExporter_0" [label="1"]
-	"anytree.node.nodemixin.NodeMixin_0" -> "anytree.node.nodemixin.NodeMixin_0" [label="5"]
-	"anytreetests.test_dictimporter_0" -> "anytree.exporter.dictexporter_0" [label="1"]
-	"anytreetests.test_resolver_0" -> "anytree.resolver_0" [label="3"]
-	"anytreenode.nodemixin_0" -> "poplib_0" [label="1"]
-	"anytreetests.test_cachedsearch_0" -> "anytree.search_0" [label="3"]
-	"anytreetests.test_mermaidexporter_0" -> "anytree.exporter.mermaidexporter.MermaidExporter_0" [label="1"]
-	"anytree.render_0" -> "logging_0" [label="1"]
-	"anytreetests.test_jsonexporter_0" -> "tempfile_0" [label="2"]
-	"anytreetests.test_walker_0" -> "anytreenode.node.Node_0" [label="11"]
-	"anytreenode.anynode_0" -> "threading_0" [label="1"]
-	"anytreeiterators.abstractiter_0" -> "anytree.render_0" [label="1"]
-	"anytreenode.util_0" -> "tokenize_0" [label="1"]
-	"anytreetests.test_dictexporter_0" -> "anytreenode.anynode.AnyNode_0" [label="9"]
-	"anytreeiterators.levelordergroupiter_0" -> "anytree.render_0" [label="1"]
-	"anytreenode.util_0" -> "configparser_0" [label="1"]
-	"anytreenode.lightnodemixin_0" -> "threading_0" [label="1"]
-	"anytree.resolver_0" -> "pstats_0" [label="1"]
-	"anytreenode.lightnodemixin_0" -> "cmath_0" [label="1"]
-	"anytree.iterators.abstractiter.AbstractIter_0" -> "anytree.iterators.preorderiter.PreOrderIter_0" [label="3"]
-	"anytree.resolver_0" -> "locale_0" [label="1"]
-	"anytree.exporter.dotexporter_0" -> "anytree.exporter.mermaidexporter_0" [label="1"]
-	"anytreetests.test_node_0" -> "anytreenode.nodemixin.NodeMixin_0" [label="1"]
-	"anytree.exporter.dotexporter.DotExporter_0" -> "anytree.iterators.abstractiter.AbstractIter_0" [label="2"]
-	"anytreetests.test_jsonimporter_0" -> "pstats_0" [label="1"]
-	"anytreetests.test_render_0" -> "anytreenode.node.Node_0" [label="2"]
-	"anytree.exporter.mermaidexporter_0" -> "io_0" [label="1"]
-	"anytreetests.test_node_sep_0" -> "anytreetests.helper_0" [label="5"]
-	"anytree.exporter.dotexporter.DotExporter_0" -> "anytree.exporter.dotexporter.DotExporter_0" [label="6"]
-	"anytreeiterators.zigzaggroupiter_0" -> "tokenize_0" [label="2"]
-	"anytree.resolver_0" -> "tokenize_0" [label="1"]
-	"anytreenode.nodemixin_0" -> "anytreetests.test_node_integrity_0" [label="1"]
-	"anytreetests.test_iterators_0" -> "anytreetests.helper_0" [label="8"]
-	"anytreetests.test_uniquedotexporter_0" -> "threading_0" [label="1"]
-	"anytreenode.nodemixin_0" -> "cmath_0" [label="1"]
-	"anytree.exporter.mermaidexporter_0" -> "unittest_0" [label="1"]
-	"anytreetests.test_dictimporter_0" -> "locale_0" [label="1"]
-	"anytreetests.test_node_attach_detach_0" -> "anytreenode.node.Node_0" [label="9"]
-	"anytree.exporter.dotexporter_0" -> "anytree.exporter.jsonexporter_0" [label="1"]
-	"anytree.exporter.dotexporter_0" -> "unittest_0" [label="1"]
-	"anytreetests.test_resolver_0" -> "pytest_0" [label="10"]
-	"anytreetests.test_node_integrity_0" -> "anytreetests.helper_0" [label="18"]
-	"anytreetests.test_jsonexporter_0" -> "anytree.exporter.dictexporter_0" [label="1"]
-	"anytree.resolver_0" -> "configparser_0" [label="1"]
-	"anytreetests.test_jsonexporter_0" -> "compileall_0" [label="1"]
-	"anytreetests.test_render_0" -> "anytree.render.RenderTree_0" [label="3"]
-	"anytree.walker_0" -> "tokenize_0" [label="1"]
-	"anytreetests.test_dotexporter_0" -> "tokenize_0" [label="1"]
-	"anytree.iterators.abstractiter.AbstractIter_0" -> "anytree.node.nodemixin.NodeMixin_0" [label="24"]
-	"anytree.config_0" -> "builtins_0" [label="1"]
-	"anytreetests.test_node_integrity_0" -> "anytreetests.test_node_integrity_0" [label="7"]
-	"anytree.exporter.mermaidexporter_0" -> "anytreetests.test_uniquedotexporter_0" [label="1"]
-	"anytreeimporter.dictimporter_0" -> "anytreeimporter.dictimporter_0" [label="1"]
-	"anytreetests.test_dictexporter_0" -> "anytreetests.test_dictexporter.MyClass_0" [label="9"]
-	"anytreeiterators.zigzaggroupiter_0" -> "anytreeiterators.levelordergroupiter.LevelOrderGroupIter_0" [label="1"]
-	"anytree.resolver_0" -> "anytree.resolver.Resolver_0" [label="1"]
-	"anytree.search_0" -> "pstats_0" [label="1"]
-	"anytree.walker_0" -> "anytree.walker.WalkError_0" [label="1"]
-	"anytreetests.test_walker_0" -> "anytree.walker_0" [label="7"]
-	"anytree.exporter.dotexporter_0" -> "configparser_0" [label="1"]
-	"anytree.exporter.mermaidexporter_0" -> "anytreeiterators.preorderiter.PreOrderIter_0" [label="1"]
-	"anytreetests.test_dotexport_0" -> "anytreenode.node.Node_0" [label="9"]
-	"anytreetests.test_dictexporter_0" -> "anytree.exporter.dictexporter.DictExporter_0" [label="1"]
-	"anytreetests.test_dictimporter_0" -> "anytreetests.helper_0" [label="2"]
-	"anytreetests.test_node_0" -> "anytreenode.anynode.AnyNode_0" [label="3"]
-	"anytree.search_0" -> "anytree.search.CountError_0" [label="2"]
-	"anytreetests.test_dictexporter_0" -> "anytreetests.helper_0" [label="1"]
-	"anytreetests.test_render_0" -> "poplib_0" [label="1"]
-	"anytreetests.test_lightnode_0" -> "anytreeiterators.preorderiter.PreOrderIter_0" [label="1"]
-	"anytreetests.test_dictimporter_0" -> "anytree.exporter.dictexporter.DictExporter_0" [label="1"]
-	"anytreetests.test_lightnode_0" -> "anytreeiterators.postorderiter.PostOrderIter_0" [label="1"]
-	"anytreetests.test_cachedsearch_0" -> "anytreenode.node.Node_0" [label="6"]
-	"anytreetests.test_dotexport_0" -> "test2ref_0" [label="1"]
-	"anytree.resolver_0" -> "anytree.render_0" [label="1"]
-	"anytreenode.lightnodemixin_0" -> "anytreenode.exceptions.LoopError_0" [label="2"]
-	"anytreetests.test_dotexporter_0" -> "test2ref_0" [label="1"]
-	"anytreetests.test_dictimporter_0" -> "anytreeimporter.dictimporter.DictImporter_0" [label="1"]
-	"anytreetests.test_dotexport_0" -> "anytree.exporter.dotexporter_0" [label="1"]
-	"anytree.resolver_0" -> "anytreenode.nodemixin_0" [label="1"]
-	"anytreetests.test_iterators_0" -> "anytreeiterators.preorderiter.PreOrderIter_0" [label="6"]
-	"anytree.exporter.mermaidexporter_0" -> "anytree.search_0" [label="1"]
-	"anytreetests.test_pickle_0" -> "io_0" [label="2"]
-	"anytree.config_0" -> "anytree.render_0" [label="1"]
-	"anytree.render_0" -> "anytree.render.ContStyle_0" [label="1"]
-	"anytreetests.test_special_methods_access_0" -> "threading_0" [label="1"]
-	"anytreetests.test_node_symlink_0" -> "anytreeiterators.postorderiter.PostOrderIter_0" [label="1"]
-	"anytree.exporter.dotexporter_0" -> "anytree.render_0" [label="1"]
-	"anytreenode.nodemixin_0" -> "builtins_0" [label="1"]
-	"anytreeiterators.levelorderiter_0" -> "anytreeiterators.abstractiter_0" [label="1"]
-	"anytree.exporter.dotexporter_0" -> "cmath_0" [label="1"]
-	"anytreetests.test_lightnode_0" -> "anytreenode.nodemixin.NodeMixin_0" [label="1"]
-	"anytreetests.test_uniquedotexporter_0" -> "tokenize_0" [label="1"]
-	"anytreenode.nodemixin_0" -> "unittest_0" [label="1"]
-	"anytree.dotexport_0" -> "anytree.search_0" [label="1"]
-	"anytreenode.symlinknode_0" -> "anytree.render_0" [label="1"]
-	"anytreetests.test_uniquedotexporter_0" -> "anytree.exporter.dotexporter.DotExporter_0" [label="1"]
-	"anytree.search_0" -> "tokenize_0" [label="1"]
-	"anytreetests.test_node_0" -> "anytreeiterators.postorderiter.PostOrderIter_0" [label="1"]
-	"anytreeimporter.dictimporter_0" -> "threading_0" [label="1"]
-	"anytree.resolver_0" -> "anytreeiterators.preorderiter.PreOrderIter_0" [label="1"]
-	"anytreeimporter.jsonimporter_0" -> "anytreeimporter.dictimporter_0" [label="1"]
-	"anytree.search_0" -> "cmath_0" [label="1"]
-	"anytree.exporter.dotexporter_0" -> "pstats_0" [label="1"]
-	"anytree.render_0" -> "pstats_0" [label="1"]
-	"++unknown-component++_0" -> "anytree.render.RenderTree_0" [label="1"]
-	"anytreeiterators.levelorderiter_0" -> "anytree.render_0" [label="1"]
-	"anytree.exporter.dotexporter_0" -> "tokenize_0" [label="1"]
-	"anytreetests.helper_0" -> "locale_0" [label="1"]
-	"anytreetests.test_node_sep_0" -> "anytree.resolver.Resolver_0" [label="1"]
-	"anytree.render_0" -> "locale_0" [label="1"]
-	"anytreeutil.__init___0" -> "configparser_0" [label="1"]
-	"anytree.cachedsearch_0" -> "anytree.search_0" [label="1"]
-	"anytreetests.test_node_attach_detach_0" -> "tokenize_0" [label="1"]
-	"anytreetests.test_render_0" -> "cmath_0" [label="1"]
-	"anytree.resolver_0" -> "anytree.exporter.mermaidexporter_0" [label="1"]
-	"anytree.exporter.jsonexporter_0" -> "anytree.exporter.dictexporter.DictExporter_0" [label="1"]
-	"anytree.walker_0" -> "builtins_0" [label="1"]
-	"anytreetests.test_dictexporter_0" -> "anytree.search_0" [label="1"]
-	"anytree.resolver_0" -> "cmath_0" [label="1"]
-	"anytreenode.nodemixin_0" -> "anytreenode.exceptions.TreeError_0" [label="2"]
-	"anytreeiterators.preorderiter_0" -> "anytreeiterators.abstractiter_0" [label="1"]
-	"anytreetests.test_jsonimporter_0" -> "anytreetests.helper_0" [label="2"]
-	"anytreetests.test_search_0" -> "anytreenode.node.Node_0" [label="9"]
-	"anytreeiterators.postorderiter_0" -> "anytreeiterators.abstractiter_0" [label="1"]
-	"anytreetests.test_special_methods_access_0" -> "decimal_0" [label="1"]
-	"anytreetests.test_examples_0" -> "anytreenode.node.Node_0" [label="7"]
-	"anytreetests.test_jsonexporter_0" -> "locale_0" [label="2"]
-	"anytreeiterators.zigzaggroupiter_0" -> "pstats_0" [label="1"]
-	"anytree.dotexport_0" -> "tokenize_0" [label="1"]
-	"anytreetests.test_render_0" -> "pstats_0" [label="1"]
-	"anytreetests.test_render_0" -> "locale_0" [label="2"]
-	"anytreetests.test_lightnode_0" -> "anytreetests.helper_0" [label="2"]
-	"anytree.exporter.dictexporter_0" -> "anytree.render_0" [label="1"]
-	"anytreetests.test_jsonimporter_0" -> "anytree.exporter.dictexporter.DictExporter_0" [label="2"]
-	"anytreetests.test_iterators_0" -> "anytreeiterators.postorderiter.PostOrderIter_0" [label="6"]
-	"anytreetests.test_render_0" -> "threading_0" [label="1"]
-	"anytreetests.test_node_integrity_0" -> "anytreenode.node.Node_0" [label="9"]
-	"anytreetests.test_util_0" -> "anytreeutil.__init___0" [label="5"]
-	"anytreeiterators.levelordergroupiter_0" -> "tokenize_0" [label="1"]
-	"anytree.exporter.jsonexporter_0" -> "anytree.exporter.dictexporter_0" [label="1"]
-	"anytreenode.lightnodemixin_0" -> "unittest_0" [label="1"]
-	"anytreetests.helper_0" -> "tokenize_0" [label="1"]
-	"anytreenode.nodemixin_0" -> "pstats_0" [label="1"]
-	"anytreeimporter.dictimporter_0" -> "tokenize_0" [label="1"]
+	"anytree.tests.test_uniquedotexporter_0" -> "anytree.exporter.dotexporter.DotExporter_0" [label="1"]
+	"anytree.importer.dictimporter_0" -> "calendar_0" [label="1"]
 	"anytree.exporter.jsonexporter_0" -> "tracemalloc_0" [label="1"]
-	"anytree.node.node.Node_0" -> "anytree.node.nodemixin.NodeMixin_0" [label="6"]
-	"anytreetests.test_iterators_0" -> "anytree_0" [label="6"]
-	"anytreenode.anynode_0" -> "anytreenode.util_0" [label="1"]
-	"anytree.render_0" -> "anytree.search_0" [label="5"]
-	"anytreetests.test_mermaidexporter_0" -> "threading_0" [label="1"]
-	"anytreetests.test_jsonimporter_0" -> "tempfile_0" [label="1"]
-	"anytreetests.test_special_methods_access_0" -> "cmath_0" [label="1"]
-	"anytree.exporter.dotexporter_0" -> "tempfile_0" [label="1"]
-	"anytreenode.node_0" -> "threading_0" [label="1"]
-	"anytreetests.test_examples_0" -> "anytreetests.helper_0" [label="4"]
-	"anytree.render_0" -> "configparser_0" [label="1"]
-	"anytree.resolver_0" -> "logging_0" [label="1"]
-	"anytreetests.test_node_0" -> "anytreeiterators.preorderiter.PreOrderIter_0" [label="1"]
-	"anytreetests.test_special_methods_access_0" -> "anytreetests.test_special_methods_access_0" [label="2"]
-	"anytreetests.test_uniquedotexporter_0" -> "anytreenode.node.Node_0" [label="1"]
-	"anytreetests.test_node_symlink_0" -> "anytreeiterators.preorderiter.PreOrderIter_0" [label="1"]
-	"anytreetests.test_special_methods_access_0" -> "anytreenode.nodemixin_0" [label="1"]
-	"anytreenode.lightnodemixin_0" -> "anytreenode.exceptions.TreeError_0" [label="1"]
-	"anytreetests.test_node_sep_0" -> "anytree.render.RenderTree_0" [label="1"]
-	"++unknown-component++_0" -> "anytree.iterators.abstractiter.AbstractIter_0" [label="14"]
-	"anytreenode.symlinknode_0" -> "pstats_0" [label="1"]
-	"anytreetests.test_lightnode_0" -> "pstats_0" [label="1"]
-	"anytreenode.lightnodemixin_0" -> "builtins_0" [label="1"]
-	"anytreenode.symlinknodemixin_0" -> "anytreenode.symlinknodemixin_0" [label="1"]
-	"anytreenode.util_0" -> "logging_0" [label="1"]
-	"anytreetests.test_dotexport_0" -> "anytree.render.RenderTree_0" [label="1"]
-	"anytreenode.symlinknodemixin_0" -> "anytree.render_0" [label="1"]
-	"anytree.exporter.dotexporter_0" -> "anytreetests.test_dotexport_0" [label="1"]
-	"anytree.search_0" -> "anytreeiterators.preorderiter.PreOrderIter_0" [label="1"]
-	"anytreetests.test_dictexporter_0" -> "anytreenode.node.Node_0" [label="9"]
-	"anytree.iterators.abstractiter.AbstractIter_0" -> "anytree.iterators.levelorderiter.LevelOrderIter_0" [label="1"]
-	"anytreetests.test_node_sep_0" -> "anytree.render_0" [label="10"]
-	"anytree.exporter.dotexporter_0" -> "uu_0" [label="1"]
-	"anytreeiterators.levelordergroupiter_0" -> "anytree.search_0" [label="1"]
-	"anytreetests.test_walker_0" -> "anytree.walker.Walker_0" [label="1"]
-	"anytreenode.node_0" -> "logging_0" [label="1"]
-	"anytreetests.test_lightnode_0" -> "threading_0" [label="1"]
-	"anytreenode.lightnodemixin_0" -> "anytreetests.test_node_integrity_0" [label="1"]
-	"anytreenode.nodemixin_0" -> "imp_0" [label="1"]
-	"anytreetests.test_render_0" -> "anytree.render.DoubleStyle_0" [label="1"]
-	"anytreenode.symlinknodemixin_0" -> "threading_0" [label="1"]
-	"anytreetests.test_mermaidexporter_0" -> "anytreenode.node.Node_0" [label="9"]
-	"anytreetests.test_jsonimporter_0" -> "threading_0" [label="2"]
-	"anytreetests.test_dotexport_0" -> "pytest_0" [label="1"]
-	"anytreetests.test_jsonexporter_0" -> "os_0" [label="2"]
-	"anytreetests.test_node_sep_0" -> "anytreenode.node.Node_0" [label="5"]
-	"anytreenode.util_0" -> "threading_0" [label="1"]
-	"anytreetests.test_iterators_0" -> "anytreeiterators.levelorderiter.LevelOrderIter_0" [label="6"]
-	"anytree.cachedsearch_0" -> "functools_0" [label="1"]
-	"anytree.render.RenderTree_0" -> "anytree.render.AbstractStyle_0" [label="4"]
-	"anytreenode.lightnodemixin_0" -> "pstats_0" [label="1"]
-	"anytreenode.node_0" -> "locale_0" [label="1"]
-	"anytreetests.test_render_0" -> "anytree.render.ContRoundStyle_0" [label="1"]
-	"anytree.exporter.dotexporter_0" -> "logging_0" [label="1"]
-	"anytreetests.test_node_sep_0" -> "locale_0" [label="1"]
-	"anytreetests.test_jsonexporter_0" -> "anytree.exporter.jsonexporter_0" [label="1"]
-	"anytree.exporter.mermaidexporter_0" -> "locale_0" [label="1"]
-	"anytreetests.test_special_methods_access_0" -> "poplib_0" [label="1"]
-	"anytreetests.test_jsonimporter_0" -> "anytreeimporter.jsonimporter_0" [label="1"]
-	"anytreeimporter.dictimporter_0" -> "platform_0" [label="1"]
-	"anytreetests.test_jsonimporter_0" -> "anytreeimporter.dictimporter_0" [label="1"]
-	"anytreetests.test_dictimporter_0" -> "anytree.render.RenderTree_0" [label="1"]
-	"anytreenode.symlinknode_0" -> "anytreenode.util_0" [label="1"]
-	"anytreetests.test_special_methods_access_0" -> "anytree.search_0" [label="2"]
-	"++unknown-component++_0" -> "anytree.node.node.Node_0" [label="6"]
-	"anytreetests.test_jsonimporter_0" -> "anytree.exporter.jsonexporter_0" [label="1"]
-	"++unknown-component++_0" -> "anytree.render.ContStyle_0" [label="1"]
-	"anytreetests.test_node_symlink_0" -> "anytreetests.helper_0" [label="28"]
-	"anytree.render.RenderTree_0" -> "anytree.render.RenderTree_0" [label="1"]
-	"anytreetests.test_dotexport_0" -> "shutil_0" [label="1"]
-	"anytree.exporter.dotexporter_0" -> "io_0" [label="1"]
-	"anytree.render_0" -> "calendar_0" [label="1"]
-	"anytreenode.node_0" -> "anytreenode.util_0" [label="1"]
-	"anytree.exporter.dotexporter_0" -> "os_0" [label="1"]
-	"anytreenode.symlinknodemixin_0" -> "configparser_0" [label="1"]
-	"anytreenode.nodemixin_0" -> "anytreenode.exceptions.LoopError_0" [label="2"]
-	"anytreetests.test_resolver_0" -> "anytree.cachedsearch_0" [label="1"]
-	"anytree.walker_0" -> "pstats_0" [label="1"]
-	"anytree.exporter.dotexporter_0" -> "anytree.exporter.dotexporter_0" [label="1"]
-	"anytree.dotexport_0" -> "imp_0" [label="1"]
-	"anytree.walker_0" -> "cmath_0" [label="1"]
-	"++unknown-component++_0" -> "anytree.exporter.dotexporter.DotExporter_0" [label="1"]
-	"anytree.exporter.mermaidexporter_0" -> "pstats_0" [label="1"]
-	"anytreetests.helper_0" -> "configparser_0" [label="1"]
-	"anytree.exporter.dictexporter_0" -> "configparser_0" [label="1"]
-	"anytreetests.test_node_attach_detach_0" -> "anytreetests.helper_0" [label="2"]
-	"anytreeiterators.postorderiter_0" -> "anytree.search_0" [label="1"]
-	"anytreeiterators.abstractiter_0" -> "tokenize_0" [label="1"]
-	"anytree.exporter.dotexporter_0" -> "anytreetests.test_node_integrity_0" [label="1"]
-	"anytreetests.test_jsonexporter_0" -> "anytreetests.helper_0" [label="2"]
-	"anytreeiterators.abstractiter_0" -> "anytree.search_0" [label="1"]
-	"anytreetests.test_iterators_0" -> "anytreeiterators.levelordergroupiter.LevelOrderGroupIter_0" [label="6"]
-	"anytreetests.test_render_0" -> "anytree.render.AsciiStyle_0" [label="1"]
-	"anytreetests.test_dotexporter_0" -> "threading_0" [label="1"]
-	"anytreetests.test_examples_0" -> "anytree.render.RenderTree_0" [label="1"]
-	"anytreeutil.__init___0" -> "anytreenode.nodemixin_0" [label="1"]
-	"anytree.walker_0" -> "anytree.walker_0" [label="1"]
-	"anytree.config_0" -> "tokenize_0" [label="1"]
-	"anytreetests.test_dictimporter_0" -> "anytreeimporter.dictimporter_0" [label="1"]
-	"anytree.iterators.abstractiter.AbstractIter_0" -> "anytree.exporter.dotexporter.DotExporter_0" [label="12"]
-	"anytree.exporter.mermaidexporter_0" -> "anytreetests.test_dotexport_0" [label="1"]
-	"anytreetests.test_render_0" -> "anytreetests.test_render_0" [label="0"]
-	"anytreetests.test_examples_0" -> "locale_0" [label="3"]
-	"anytreetests.test_render_0" -> "anytree.render.ContStyle_0" [label="1"]
-	"anytreetests.test_special_methods_access_0" -> "builtins_0" [label="1"]
-	"anytree.render.ContStyle_0" -> "anytree.render.AbstractStyle_0" [label="1"]
-	"anytreetests.test_pickle_0" -> "anytree.render.RenderTree_0" [label="2"]
-	"conftest_0" -> "tokenize_0" [label="1"]
-	"anytreetests.test_special_methods_access_0" -> "anytreetests.test_uniquedotexporter_0" [label="1"]
-	"anytreetests.test_jsonexporter_0" -> "anytree.exporter.jsonexporter.JsonExporter_0" [label="2"]
-	"anytree.render_0" -> "_sqlite3_0" [label="2"]
-	"anytreeimporter.jsonimporter_0" -> "anytreeimporter.dictimporter.DictImporter_0" [label="1"]
-	"anytreetests.test_jsonimporter_0" -> "anytree.exporter.dictexporter_0" [label="2"]
-	"anytreetests.helper_0" -> "anytreetests.helper_0" [label="1"]
-	"anytreeiterators.levelorderiter_0" -> "anytree.search_0" [label="2"]
-	"anytree.exporter.dotexporter_0" -> "anytreenode.nodemixin_0" [label="1"]
-	"anytreetests.test_node_0" -> "anytree.search_0" [label="2"]
+	"anytree.tests.test_node_sep_0" -> "anytree.resolver.Resolver_0" [label="1"]
+	"anytree.node.lightnodemixin_0" -> "anytree.node.exceptions.TreeError_0" [label="1"]
+	"anytree.node.nodemixin_0" -> "cmath_0" [label="3"]
+	"anytree.tests.test_dictexporter_0" -> "anytree.tests.test_dictexporter.MyClass_0" [label="9"]
+	"anytree.iterators.abstractiter_0" -> "anytree.search_0" [label="1"]
+	"anytree.tests.test_resolver_0" -> "anytree.tests.helper_0" [label="4"]
+	"anytree.resolver_0" -> "anytree.render_0" [label="1"]
+	"anytree.exporter.dotexporter_0" -> "cmath_0" [label="1"]
+	"anytree.dotexport_0" -> "anytree.search_0" [label="1"]
+	"anytree.exporter.dotexporter.DotExporter_0" -> "anytree.node.nodemixin.NodeMixin_0" [label="6"]
+	"anytree.tests.test_uniquedotexporter_0" -> "anytree.exporter.dotexporter_0" [label="1"]
+	"anytree.iterators.abstractiter_0" -> "anytree.iterators.abstractiter_0" [label="1"]
+	"anytree.tests.test_node_integrity_0" -> "anytree.node.node.Node_0" [label="9"]
+	"anytree.tests.test_uniquedotexporter_0" -> "anytree.node.node.Node_0" [label="9"]
+	"anytree.importer.dictimporter_0" -> "anytree.importer.dictimporter_0" [label="1"]
+	"anytree.tests.test_render_0" -> "anytree.node.node.Node_0" [label="5"]
+	"anytree.tests.test_lightnode_0" -> "tokenize_0" [label="2"]
+	"anytree.importer.jsonimporter_0" -> "tracemalloc_0" [label="1"]
+	"anytree.tests.test_dictexporter_0" -> "anytree.node.node.Node_0" [label="9"]
+	"anytree.node.nodemixin_0" -> "anytree.tests.test_node_integrity_0" [label="1"]
+	"anytree.tests.test_cachedsearch_0" -> "anytree.node.node.Node_0" [label="9"]
+	"anytree.resolver_0" -> "anytree.resolver.Resolver_0" [label="1"]
+	"anytree.cachedsearch_0" -> "anytree.cachedsearch_0" [label="1"]
+	"anytree.tests.test_lightnode_0" -> "cmath_0" [label="1"]
+	"anytree.tests.test_dictexporter_0" -> "anytree.tests.helper_0" [label="1"]
+	"anytree.exporter.dotexporter_0" -> "anytree.exporter.mermaidexporter_0" [label="1"]
+	"anytree.tests.test_iterators_0" -> "cmath_0" [label="2"]
+	"anytree.node.symlinknode_0" -> "cmath_0" [label="1"]
+	"anytree.iterators.preorderiter_0" -> "anytree.search_0" [label="1"]
+	"anytree.tests.test_resolver_0" -> "pytest_0" [label="10"]
+	"anytree.iterators.postorderiter_0" -> "anytree.render_0" [label="1"]
+	"anytree.tests.test_special_methods_access_0" -> "anytree.tests.test_special_methods_access_0" [label="2"]
+	"anytree.exporter.dotexporter_0" -> "anytree.tests.test_node_integrity_0" [label="1"]
+	"anytree.exporter.mermaidexporter_0" -> "anytree.tests.test_dotexport_0" [label="2"]
+	"anytree.tests.test_dotexporter_0" -> "anytree.node.node.Node_0" [label="9"]
+	"anytree.tests.test_dictimporter_0" -> "cmath_0" [label="1"]
+	"anytree.node.nodemixin_0" -> "anytree.node.exceptions.TreeError_0" [label="1"]
+	"anytree.resolver_0" -> "tokenize_0" [label="2"]
+	"anytree.node.lightnodemixin_0" -> "anytree.node.nodemixin_0" [label="1"]
+	"anytree.tests.test_node_0" -> "anytree.node.node.Node_0" [label="7"]
+	"anytree.resolver_0" -> "cmath_0" [label="1"]
+	"anytree.tests.test_render_0" -> "anytree.render.RenderTree_0" [label="2"]
+	"anytree.tests.test_render_0" -> "tokenize_0" [label="1"]
+	"anytree.node.lightnodemixin_0" -> "tokenize_0" [label="1"]
+	"anytree.tests.test_lightnode_0" -> "anytree.iterators.preorderiter.PreOrderIter_0" [label="1"]
+	"anytree.tests.test_render_0" -> "anytree.render_0" [label="1"]
+	"anytree.tests.test_mermaidexporter_0" -> "anytree.exporter.mermaidexporter.MermaidExporter_0" [label="1"]
+	"anytree.tests.test_dictimporter_0" -> "anytree.importer.dictimporter.DictImporter_0" [label="1"]
+	"anytree.importer.jsonimporter_0" -> "anytree.importer.dictimporter_0" [label="1"]
+	"anytree.tests.test_dotexporter_0" -> "anytree.exporter.dotexporter_0" [label="1"]
+	"anytree.tests.test_mermaidexporter_0" -> "anytree.exporter.mermaidexporter_0" [label="1"]
+	"anytree.tests.test_uniquedotexporter_0" -> "cmath_0" [label="1"]
+	"anytree.node.util_0" -> "cmath_0" [label="1"]
+	"anytree.tests.test_jsonimporter_0" -> "anytree.exporter.dictexporter.DictExporter_0" [label="2"]
+	"anytree.dotexport_0" -> "mailcap_0" [label="1"]
+	"anytree.tests.test_render_0" -> "anytree.render.AsciiStyle_0" [label="1"]
+	"anytree.resolver_0" -> "anytree.resolver_0" [label="1"]
+	"anytree.tests.test_dictexporter_0" -> "anytree.exporter.dictexporter_0" [label="1"]
+	"anytree.tests.test_walker_0" -> "anytree.tests.helper_0" [label="1"]
+	"anytree.exporter.dotexporter_0" -> "anytree.tests.test_dotexport_0" [label="2"]
+	"anytree.iterators.abstractiter_0" -> "cmath_0" [label="1"]
+	"anytree.tests.test_dictimporter_0" -> "tokenize_0" [label="1"]
+	"anytree.tests.test_node_0" -> "anytree.tests.helper_0" [label="1"]
+	"anytree.exporter.dotexporter_0" -> "anytree.render_0" [label="1"]
+	"anytree.node.nodemixin.NodeMixin_0" -> "anytree.node.nodemixin.NodeMixin_0" [label="5"]
+	"anytree.importer.dictimporter_0" -> "cmath_0" [label="1"]
+	"anytree.tests.test_dotexporter_0" -> "anytree.exporter.dotexporter.DotExporter_0" [label="1"]
+	"anytree.tests.test_dotexport_0" -> "test2ref_0" [label="1"]
+	"anytree.tests.test_cachedsearch_0" -> "anytree.tests.helper_0" [label="2"]
+	"anytree.tests.test_special_methods_access_0" -> "anytree.tests.test_special_methods_access.MyMapping_0" [label="4"]
+	"anytree.tests.test_dotexporter_0" -> "test2ref_0" [label="1"]
+	"anytree.tests.test_util_0" -> "anytree.util.__init___0" [label="4"]
 	"anytree.exporter.mermaidexporter_0" -> "anytree.exporter.jsonexporter_0" [label="3"]
+	"anytree.tests.test_dotexport_0" -> "anytree.node.node.Node_0" [label="9"]
+	"anytree.tests.test_dictimporter_0" -> "anytree.render.RenderTree_0" [label="1"]
+	"anytree.cachedsearch_0" -> "anytree.search_0" [label="1"]
+	"anytree.tests.test_node_integrity_0" -> "anytree.tests.test_node_integrity_0" [label="0"]
+	"anytree.tests.test_node_sep_0" -> "anytree.tests.helper_0" [label="3"]
+	"anytree.tests.test_search_0" -> "anytree.search_0" [label="3"]
+	"anytree.tests.test_pickle_0" -> "anytree.node.node.Node_0" [label="1"]
+	"anytree.exporter.mermaidexporter_0" -> "anytree.tests.test_uniquedotexporter_0" [label="1"]
+	"anytree.iterators.abstractiter.AbstractIter_0" -> "anytree.iterators.preorderiter.PreOrderIter_0" [label="3"]
+	"anytree.tests.test_resolver_0" -> "anytree.resolver_0" [label="8"]
+	"anytree.tests.test_mermaidexporter_0" -> "test2ref_0" [label="1"]
+	"anytree.exporter.dotexporter.DotExporter_0" -> "anytree.iterators.abstractiter.AbstractIter_0" [label="2"]
+	"anytree.tests.test_pickle_0" -> "cmath_0" [label="1"]
+	"anytree.search_0" -> "cmath_0" [label="1"]
+	"anytree.tests.test_iterators_0" -> "anytree.tests.helper_0" [label="8"]
+	"anytree.node.symlinknodemixin_0" -> "anytree.render_0" [label="1"]
+	"anytree.node.util_0" -> "ntpath_0" [label="1"]
+	"anytree.exporter.dotexporter.DotExporter_0" -> "anytree.exporter.dotexporter.DotExporter_0" [label="6"]
+	"anytree.exporter.mermaidexporter_0" -> "anytree.iterators.preorderiter.PreOrderIter_0" [label="1"]
+	"anytree.iterators.abstractiter_0" -> "anytree.render_0" [label="1"]
+	"anytree.iterators.levelordergroupiter_0" -> "anytree.iterators.abstractiter_0" [label="1"]
+	"anytree.render_0" -> "sqlite3_0" [label="2"]
+	"anytree.tests.test_iterators_0" -> "anytree.node.node.Node_0" [label="9"]
+	"anytree.tests.test_node_sep_0" -> "anytree.resolver_0" [label="6"]
+	"anytree.tests.test_jsonexporter_0" -> "anytree.exporter.dictexporter_0" [label="2"]
+	"anytree.tests.test_render_0" -> "anytree.render.ContStyle_0" [label="1"]
+	"conftest_0" -> "pytest_0" [label="1"]
+	"anytree.exporter.dotexporter_0" -> "anytree.exporter.jsonexporter_0" [label="1"]
+	"anytree.iterators.levelordergroupiter_0" -> "anytree.search_0" [label="1"]
+	"anytree.tests.test_mermaidexporter_0" -> "anytree.node.node.Node_0" [label="9"]
+	"anytree.resolver_0" -> "anytree.cachedsearch_0" [label="1"]
+	"anytree.tests.test_dictexporter_0" -> "anytree.exporter.dictexporter.DictExporter_0" [label="1"]
+	"anytree.tests.test_resolver_0" -> "anytree.cachedsearch_0" [label="1"]
+	"anytree.util.__init___0" -> "anytree.node.nodemixin_0" [label="1"]
+	"anytree.config_0" -> "anytree.render_0" [label="1"]
+	"anytree.iterators.abstractiter.AbstractIter_0" -> "anytree.node.nodemixin.NodeMixin_0" [label="24"]
+	"anytree.exporter.dictexporter_0" -> "anytree.exporter.dictexporter_0" [label="1"]
+	"anytree.node.lightnodemixin_0" -> "unittest_0" [label="1"]
+	"anytree.tests.test_node_sep_0" -> "anytree.node.node.Node_0" [label="5"]
+	"anytree.tests.test_iterators_0" -> "tokenize_0" [label="6"]
+	"anytree.node.node_0" -> "calendar_0" [label="1"]
+	"anytree.tests.test_resolver_0" -> "anytree.render_0" [label="3"]
+	"anytree.iterators.zigzaggroupiter_0" -> "cmath_0" [label="2"]
+	"anytree.tests.test_jsonexporter_0" -> "cmath_0" [label="2"]
+	"anytree.iterators.zigzaggroupiter_0" -> "anytree.iterators.levelordergroupiter.LevelOrderGroupIter_0" [label="1"]
+	"anytree.tests.test_dictexporter_0" -> "cmath_0" [label="1"]
+	"anytree.resolver_0" -> "mailbox_0" [label="2"]
+	"anytree.search_0" -> "anytree.search.CountError_0" [label="2"]
+	"anytree.walker_0" -> "anytree.walker_0" [label="1"]
+	"anytree.exporter.dictexporter_0" -> "cmath_0" [label="1"]
+	"anytree.tests.test_jsonexporter_0" -> "anytree.node.anynode.AnyNode_0" [label="9"]
+	"anytree.iterators.postorderiter_0" -> "anytree.iterators.abstractiter_0" [label="1"]
+	"anytree.node.nodemixin_0" -> "anytree.iterators.preorderiter.PreOrderIter_0" [label="1"]
+	"anytree.tests.test_dictimporter_0" -> "anytree.importer.dictimporter_0" [label="1"]
+	"anytree.walker_0" -> "anytree.walker.WalkError_0" [label="1"]
+	"anytree.tests.test_jsonimporter_0" -> "anytree.importer.jsonimporter.JsonImporter_0" [label="2"]
+	"anytree.tests.test_uniquedotexporter_0" -> "test2ref_0" [label="1"]
+	"anytree.tests.test_util_0" -> "anytree.node.node.Node_0" [label="4"]
+	"anytree.search_0" -> "anytree.search_0" [label="1"]
+	"anytree.node.lightnodemixin_0" -> "anytree.iterators.preorderiter.PreOrderIter_0" [label="1"]
 	"anytree.search_0" -> "anytree.render_0" [label="1"]
-	"anytreeiterators.zigzaggroupiter_0" -> "cmath_0" [label="1"]
-	"anytreeutil.__init___0" -> "tokenize_0" [label="1"]
-	"anytreetests.test_node_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytreetests.test_search_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreetests.test_special_methods_access_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytree.render_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytreetests.test_node_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreetests.test_node_sep_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreeimporter.jsonimporter.JsonImporter_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreetests.test_dictexporter_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytree.resolver.Resolver_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytreetests.test_special_methods_access_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytreetests.test_node_symlink_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytree.exporter.mermaidexporter_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreeiterators.levelordergroupiter_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytree.exporter.dictexporter_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytreetests.test_examples_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreetests.test_node_0" -> "anytreetests.test_node_sep_0" [label="1"]
-	"anytree.exporter.dotexporter_0" -> "anytreetests.test_node_sep_0" [label="1"]
-	"anytreetests.test_node_integrity_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreetests.test_cachedsearch_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreetests.test_render_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytree.resolver_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreetests.test_resolver_0" -> "anytreetests.test_node_sep_0" [label="1"]
-	"anytreetests.test_lightnode_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytreetests.test_node_0" -> "anytreetests.test_node_symlink_0" [label="1"]
-	"anytree.walker_0" -> "anytreetests.test_node_0" [label="1"]
-	"anytreeiterators.abstractiter_0" -> "anytreetests.test_pickle_0" [label="1"]
-	"anytree.render.RenderTree_0" -> "anytree.exporter.dotexporter_0" [label="1"]
-	"anytree.exporter.dotexporter_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytree.resolver_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytreetests.test_dictimporter_0" -> "anytreetests.test_special_methods_access_0" [label="1"]
-	"anytreenode.nodemixin_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytreenode.lightnodemixin_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytree.resolver_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytreeutil.__init___0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytreetests.test_iterators_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreetests.test_util_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytree.exporter.mermaidexporter.MermaidExporter_0" -> "anytreetests.test_special_methods_access_0" [label="1"]
-	"anytree.walker_0" -> "anytreetests.test_special_methods_access_0" [label="1"]
-	"anytree.resolver_0" -> "anytreetests.test_node_sep_0" [label="1"]
-	"anytree.exporter.jsonexporter_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytreetests.test_lightnode_0" -> "anytreetests.test_jsonexporter_0" [label="1"]
-	"anytree.exporter.dotexporter.DotExporter_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreetests.test_dictexporter_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytreenode.nodemixin_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytree.search_0" -> "anytreetests.test_node_sep_0" [label="1"]
-	"anytreeiterators.abstractiter.AbstractIter_0" -> "anytree.exporter.dotexporter_0" [label="1"]
-	"anytreetests.test_node_0" -> "anytreetests.test_jsonexporter_0" [label="1"]
-	"anytree.render_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytree.walker_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytreetests.test_mermaidexporter_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreetests.test_lightnode_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreetests.test_dotexporter_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytree.resolver_0" -> "anytreetests.test_special_methods_access_0" [label="1"]
-	"anytree.exporter.dotexporter.DotExporter_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytreeiterators.levelorderiter_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytreetests.test_node_attach_detach_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytree.exporter.dotexporter_0" -> "anytreetests.test_node_0" [label="1"]
-	"anytreeutil.__init___0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreetests.test_resolver_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreenode.node_0" -> "anytreetests.test_node_0" [label="1"]
-	"anytree.exporter.mermaidexporter.MermaidExporter_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytreenode.lightnodemixin_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytreeimporter.jsonimporter_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytree.exporter.dictexporter.DictExporter_0" -> "anytree.exporter.dotexporter_0" [label="1"]
-	"anytreenode.lightnodemixin_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytreetests.test_pickle_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytree.walker_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytreenode.util_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreetests.test_uniquedotexporter_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreetests.test_pickle_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytreetests.test_jsonexporter_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreetests.test_lightnode_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytreetests.test_walker_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreetests.test_dotexport_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreetests.test_render_0" -> "anytreetests.test_pickle_0" [label="1"]
-	"anytree.render.AbstractStyle_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytree.exporter.dotexporter_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytree.render_0" -> "anytreetests.test_node_0" [label="1"]
-	"anytreenode.util_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytreetests.test_jsonimporter_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytree.exporter.mermaidexporter.MermaidExporter_0" -> "anytree.exporter.dotexporter_0" [label="1"]
-	"anytreetests.test_node.EqOverwrittingNode_0" -> "anytreetests.test_pickle_0" [label="1"]
-	"anytreetests.test_dictexporter_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytreetests.test_special_methods_access.MyMapping_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytreenode.nodemixin_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytreetests.test_jsonexporter_0" -> "anytreetests.test_dictimporter_0" [label="1"]
-	"anytreetests.test_special_methods_access_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytree.search_0" -> "anytreetests.test_node_0" [label="1"]
-	"anytreetests.test_node_attach_detach_0" -> "anytreetests.test_jsonexporter_0" [label="1"]
-	"anytree.exporter.dotexporter.DotExporter_0" -> "anytreetests.test_node_sep_0" [label="1"]
-	"anytreeiterators.abstractiter_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytreeiterators.preorderiter_0" -> "anytree.exporter.dotexporter_0" [label="1"]
-	"anytree.exporter.jsonexporter_0" -> "anytreetests.test_node_sep_0" [label="1"]
-	"anytreetests.test_render_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytreetests.test_render_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytreetests.test_lightnode_0" -> "anytreetests.test_pickle_0" [label="1"]
-	"anytree.exporter.dotexporter.DotExporter_0" -> "anytreetests.test_special_methods_access_0" [label="1"]
-	"anytreetests.test_dictimporter_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytree.exporter.dotexporter.DotExporter_0" -> "anytree.exporter.dotexporter_0" [label="1"]
-	"anytree.exporter.mermaidexporter.MermaidExporter_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreetests.test_special_methods_access.MyNode_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytree.exporter.mermaidexporter_0" -> "anytreetests.test_node_0" [label="1"]
-	"anytreeiterators.abstractiter_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytree.exporter.dictexporter.DictExporter_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytree.search_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytree.exporter.dotexporter.DotExporter_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytreetests.test_lightnode_0" -> "anytreetests.test_node_symlink_0" [label="1"]
-	"anytreeiterators.abstractiter.AbstractIter_0" -> "anytreetests.test_node_sep_0" [label="1"]
-	"anytree.render_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytree.exporter.jsonexporter.JsonExporter_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytree.resolver.ResolverError_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytree.exporter.dictexporter_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreetests.test_node_integrity_0" -> "anytreetests.test_jsonexporter_0" [label="1"]
-	"anytreenode.node.Node_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytree.render_0" -> "anytreetests.test_pickle_0" [label="1"]
-	"anytree.render_0" -> "anytreetests.test_node_sep_0" [label="1"]
-	"anytreetests.test_resolver_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytree.resolver.ChildResolverError_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytreetests.test_dictexporter.MyClass_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytreeimporter.dictimporter_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytree.exporter.mermaidexporter_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytree.exporter.jsonexporter.JsonExporter_0" -> "anytree.exporter.dotexporter_0" [label="1"]
-	"anytreetests.test_node_0" -> "anytreetests.test_pickle_0" [label="1"]
-	"anytreetests.test_iterators_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytree.exporter.dictexporter_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytreeiterators.abstractiter.AbstractIter_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreetests.test_node.EqOverwrittingNode_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytree.exporter.dictexporter.DictExporter_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytree.render.RenderTree_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreenode.symlinknode.SymlinkNode_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytreetests.test_node_attach_detach_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytree.walker_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreetests.test_dictimporter_0" -> "anytreetests.test_lightnode_0" [label="1"]
-	"anytreetests.test_render_0" -> "anytreetests.test_node_sep_0" [label="1"]
-	"anytreetests.test_dotexport_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytreetests.test_node_sep_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"conftest_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytree.render.RenderTree_0" -> "anytreetests.test_iterators_0" [label="1"]
-	"anytreetests.test_lightnode.LightNode_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytreetests.test_jsonexporter_0" -> "anytreetests.test_node_sep_0" [label="1"]
-	"anytree.exporter.mermaidexporter.MermaidExporter_0" -> "anytreetests.test_cachedsearch_0" [label="1"]
-	"anytreeimporter.jsonimporter_0" -> "anytreetests.test_node_sep_0" [label="1"]
-	"anytree.exporter.mermaidexporter.MermaidExporter_0" -> "anytreetests.test_node_sep_0" [label="1"]
+	"anytree.tests.test_special_methods_access_0" -> "anytree.search_0" [label="2"]
+	"anytree.tests.test_jsonimporter_0" -> "anytree.importer.jsonimporter_0" [label="1"]
+	"anytree.tests.test_lightnode_0" -> "anytree.tests.helper_0" [label="1"]
+	"anytree.util.__init___0" -> "cmath_0" [label="1"]
+	"anytree.tests.test_dotexporter_0" -> "cmath_0" [label="1"]
+	"anytree.exporter.dotexporter_0" -> "anytree.search_0" [label="1"]
+	"anytree.tests.test_dotexport_0" -> "anytree.render.RenderTree_0" [label="1"]
+	"anytree.exporter.dotexporter_0" -> "anytree.iterators.preorderiter.PreOrderIter_0" [label="1"]
+	"anytree.exporter.mermaidexporter_0" -> "_operator_0" [label="1"]
+	"anytree.tests.test_special_methods_access_0" -> "tokenize_0" [label="1"]
+	"anytree.iterators.preorderiter_0" -> "anytree.iterators.abstractiter_0" [label="1"]
+	"anytree.tests.test_node_integrity_0" -> "anytree.tests.helper_0" [label="3"]
+	"anytree.iterators.levelordergroupiter_0" -> "cmath_0" [label="1"]
+	"anytree.tests.test_iterators_0" -> "anytree.iterators.postorderiter.PostOrderIter_0" [label="6"]
+	"anytree.tests.test_jsonimporter_0" -> "anytree.exporter.dictexporter_0" [label="2"]
+	"anytree.render_0" -> "anytree.search_0" [label="5"]
+	"anytree.tests.test_mermaidexporter_0" -> "cmath_0" [label="1"]
+	"anytree.tests.test_node_symlink_0" -> "anytree.node.node.Node_0" [label="10"]
+	"anytree.tests.test_walker_0" -> "anytree.walker.Walker_0" [label="1"]
+	"anytree.tests.test_dictimporter_0" -> "anytree.tests.helper_0" [label="2"]
+	"anytree.tests.test_jsonimporter_0" -> "anytree.exporter.jsonexporter_0" [label="1"]
+	"anytree.tests.test_search_0" -> "anytree.node.node.Node_0" [label="6"]
+	"anytree.resolver_0" -> "anytree.exporter.mermaidexporter_0" [label="1"]
+	"anytree.node.lightnodemixin_0" -> "anytree.node.exceptions.LoopError_0" [label="2"]
+	"anytree.tests.test_util_0" -> "anytree.tests.helper_0" [label="5"]
+	"anytree.tests.test_dictimporter_0" -> "anytree.exporter.dictexporter.DictExporter_0" [label="1"]
+	"anytree.exporter.mermaidexporter_0" -> "anytree.exporter.mermaidexporter_0" [label="1"]
+	"anytree.tests.test_node_symlink_0" -> "anytree.iterators.postorderiter.PostOrderIter_0" [label="1"]
+	"anytree.tests.test_resolver_0" -> "cmath_0" [label="4"]
+	"anytree.tests.test_jsonexporter_0" -> "tempfile_0" [label="2"]
+	"anytree.tests.test_iterators_0" -> "anytree_0" [label="6"]
+	"++unknown-component++_0" -> "anytree.render.RenderTree_0" [label="1"]
+	"anytree.tests.test_special_methods_access_0" -> "anytree.node.node.Node_0" [label="5"]
+	"anytree.tests.test_cachedsearch_0" -> "anytree.search_0" [label="3"]
+	"anytree.tests.test_dotexport_0" -> "anytree.exporter.dotexporter_0" [label="1"]
+	"anytree.tests.test_node_0" -> "anytree.iterators.postorderiter.PostOrderIter_0" [label="1"]
+	"anytree.render_0" -> "ntpath_0" [label="1"]
+	"anytree.exporter.mermaidexporter_0" -> "anytree.search_0" [label="1"]
+	"anytree.tests.test_iterators_0" -> "anytree.iterators.preorderiter.PreOrderIter_0" [label="6"]
+	"anytree.walker_0" -> "cmath_0" [label="1"]
+	"anytree.exporter.jsonexporter_0" -> "anytree.exporter.dictexporter.DictExporter_0" [label="1"]
+	"anytree.tests.test_node_0" -> "anytree.node.nodemixin.NodeMixin_0" [label="1"]
+	"anytree.tests.test_pickle_0" -> "anytree.render.RenderTree_0" [label="2"]
+	"anytree.resolver_0" -> "anytree.node.nodemixin_0" [label="1"]
+	"anytree.node.node_0" -> "cmath_0" [label="1"]
+	"anytree.tests.test_lightnode_0" -> "anytree.iterators.postorderiter.PostOrderIter_0" [label="1"]
+	"anytree.node.node_0" -> "anytree.node.util_0" [label="1"]
+	"anytree.exporter.mermaidexporter_0" -> "unittest_0" [label="1"]
+	"anytree.tests.test_node_0" -> "anytree.node.anynode.AnyNode_0" [label="3"]
+	"anytree.tests.test_node_sep_0" -> "cmath_0" [label="1"]
+	"anytree.tests.test_examples_0" -> "anytree.node.node.Node_0" [label="7"]
+	"anytree.render_0" -> "anytree.render.ContStyle_0" [label="1"]
+	"anytree.node.node_0" -> "tokenize_0" [label="1"]
+	"anytree.resolver_0" -> "calendar_0" [label="1"]
+	"anytree.node.symlinknodemixin_0" -> "anytree.node.symlinknodemixin_0" [label="1"]
+	"anytree.node.anynode_0" -> "anytree.node.util_0" [label="1"]
+	"anytree.node.nodemixin_0" -> "tokenize_0" [label="2"]
+	"anytree.node.lightnodemixin_0" -> "audioop_0" [label="1"]
+	"anytree.tests.test_lightnode_0" -> "anytree.node.nodemixin.NodeMixin_0" [label="1"]
+	"anytree.resolver_0" -> "anytree.search_0" [label="1"]
+	"anytree.util.__init___0" -> "builtins_0" [label="1"]
+	"anytree.tests.test_pickle_0" -> "tokenize_0" [label="2"]
+	"anytree.tests.test_render_0" -> "cmath_0" [label="1"]
+	"anytree.render_0" -> "calendar_0" [label="1"]
+	"anytree.node.node.Node_0" -> "anytree.node.nodemixin.NodeMixin_0" [label="6"]
+	"anytree.tests.test_examples_0" -> "tokenize_0" [label="3"]
+	"anytree.resolver_0" -> "anytree.iterators.preorderiter.PreOrderIter_0" [label="1"]
+	"anytree.exporter.dotexporter_0" -> "_operator_0" [label="1"]
+	"anytree.tests.test_jsonimporter_0" -> "anytree.tests.helper_0" [label="2"]
+	"anytree.tests.test_node_sep_0" -> "anytree.render_0" [label="10"]
+	"anytree.tests.test_jsonexporter_0" -> "os_0" [label="2"]
+	"anytree.tests.test_node_symlink_0" -> "anytree.tests.helper_0" [label="28"]
+	"++unknown-component++_0" -> "anytree.iterators.abstractiter.AbstractIter_0" [label="14"]
+	"anytree.tests.test_walker_0" -> "anytree.walker_0" [label="7"]
+	"conftest_0" -> "cmath_0" [label="1"]
+	"anytree.tests.test_node_symlink_0" -> "anytree.iterators.preorderiter.PreOrderIter_0" [label="1"]
+	"anytree.node.nodemixin_0" -> "audioop_0" [label="1"]
+	"anytree.cachedsearch_0" -> "functools_0" [label="1"]
+	"anytree.tests.test_special_methods_access_0" -> "calendar_0" [label="1"]
+	"anytree.tests.helper_0" -> "cmath_0" [label="1"]
+	"anytree.tests.test_node_0" -> "anytree.iterators.preorderiter.PreOrderIter_0" [label="1"]
+	"anytree.tests.test_walker_0" -> "anytree.node.node.Node_0" [label="11"]
+	"anytree.iterators.abstractiter.AbstractIter_0" -> "anytree.iterators.levelorderiter.LevelOrderIter_0" [label="1"]
+	"anytree.exporter.jsonexporter_0" -> "anytree.exporter.dictexporter_0" [label="1"]
+	"anytree.tests.test_render_0" -> "ntpath_0" [label="1"]
+	"anytree.tests.test_node_sep_0" -> "tokenize_0" [label="1"]
+	"anytree.tests.test_dictexporter_0" -> "anytree.node.anynode.AnyNode_0" [label="9"]
+	"conftest_0" -> "anytree.render_0" [label="1"]
+	"anytree.node.nodemixin_0" -> "mailcap_0" [label="1"]
+	"anytree.iterators.levelorderiter_0" -> "anytree.render_0" [label="1"]
+	"anytree.tests.test_render_0" -> "anytree.tests.test_render_0" [label="7"]
+	"anytree.tests.test_special_methods_access_0" -> "builtins_0" [label="1"]
+	"anytree.importer.jsonimporter_0" -> "anytree.importer.dictimporter.DictImporter_0" [label="1"]
+	"anytree.tests.test_iterators_0" -> "anytree.iterators.levelorderiter.LevelOrderIter_0" [label="6"]
+	"anytree.exporter.dotexporter_0" -> "os_0" [label="1"]
+	"anytree.node.util_0" -> "calendar_0" [label="1"]
+	"anytree.tests.test_jsonimporter_0" -> "tempfile_0" [label="1"]
+	"anytree.walker_0" -> "builtins_0" [label="1"]
+	"anytree.render.RenderTree_0" -> "anytree.render.AbstractStyle_0" [label="4"]
+	"anytree.dotexport_0" -> "cmath_0" [label="1"]
+	"anytree.tests.test_jsonexporter_0" -> "anytree.tests.helper_0" [label="2"]
+	"anytree.tests.test_examples_0" -> "anytree.tests.helper_0" [label="4"]
+	"anytree.importer.dictimporter_0" -> "mailbox_0" [label="1"]
+	"anytree.exporter.dotexporter_0" -> "anytree.node.nodemixin_0" [label="1"]
+	"anytree.exporter.mermaidexporter_0" -> "tokenize_0" [label="1"]
+	"anytree.tests.test_dictimporter_0" -> "copy_0" [label="1"]
+	"anytree.node.nodemixin_0" -> "anytree.node.exceptions.LoopError_0" [label="2"]
+	"anytree.config_0" -> "tokenize_0" [label="1"]
+	"anytree.tests.test_examples_0" -> "anytree.render.RenderTree_0" [label="1"]
+	"++unknown-component++_0" -> "anytree.node.node.Node_0" [label="6"]
+	"anytree.tests.test_render_0" -> "anytree.render.DoubleStyle_0" [label="1"]
+	"anytree.iterators.postorderiter_0" -> "anytree.search_0" [label="1"]
+	"++unknown-component++_0" -> "anytree.render.ContStyle_0" [label="1"]
+	"anytree.render.RenderTree_0" -> "anytree.render.RenderTree_0" [label="1"]
+	"conftest_0" -> "calendar_0" [label="1"]
+	"anytree.exporter.dotexporter_0" -> "tokenize_0" [label="1"]
+	"anytree.tests.test_jsonimporter_0" -> "ntpath_0" [label="2"]
+	"anytree.tests.test_iterators_0" -> "anytree.iterators.zigzaggroupiter.ZigZagGroupIter_0" [label="6"]
+	"anytree.node.lightnodemixin_0" -> "anytree.tests.test_node_integrity_0" [label="1"]
+	"anytree.tests.test_dictexporter_0" -> "anytree.search_0" [label="1"]
+	"anytree.render_0" -> "tokenize_0" [label="1"]
+	"anytree.exporter.dotexporter_0" -> "anytree.exporter.dotexporter_0" [label="1"]
+	"++unknown-component++_0" -> "anytree.exporter.dotexporter.DotExporter_0" [label="1"]
+	"anytree.node.anynode_0" -> "cmath_0" [label="1"]
+	"anytree.search_0" -> "anytree.iterators.preorderiter.PreOrderIter_0" [label="1"]
+	"anytree.exporter.dotexporter_0" -> "unittest_0" [label="1"]
+	"anytree.iterators.levelordergroupiter_0" -> "anytree.render_0" [label="1"]
+	"anytree.tests.test_jsonimporter_0" -> "cmath_0" [label="1"]
+	"anytree.tests.test_jsonexporter_0" -> "ntpath_0" [label="1"]
+	"anytree.tests.helper_0" -> "tokenize_0" [label="1"]
+	"anytree.tests.test_jsonexporter_0" -> "anytree.exporter.jsonexporter.JsonExporter_0" [label="2"]
+	"anytree.tests.helper_0" -> "anytree.tests.helper_0" [label="1"]
+	"anytree.tests.test_node_0" -> "anytree.search_0" [label="2"]
+	"anytree.iterators.abstractiter.AbstractIter_0" -> "anytree.exporter.dotexporter.DotExporter_0" [label="12"]
+	"anytree.exporter.dictexporter_0" -> "anytree.render_0" [label="1"]
+	"anytree.tests.test_dictimporter_0" -> "anytree.exporter.dictexporter_0" [label="1"]
+	"anytree.node.nodemixin_0" -> "unittest_0" [label="1"]
+	"anytree.render.ContStyle_0" -> "anytree.render.AbstractStyle_0" [label="1"]
+	"anytree.tests.test_jsonimporter_0" -> "anytree.importer.dictimporter_0" [label="1"]
+	"anytree.config_0" -> "builtins_0" [label="1"]
+	"anytree.node.symlinknode_0" -> "anytree.node.util_0" [label="1"]
+	"anytree.tests.test_render_0" -> "anytree.render.ContRoundStyle_0" [label="1"]
+	"anytree.iterators.levelorderiter_0" -> "anytree.iterators.abstractiter_0" [label="1"]
+	"anytree.tests.test_node_attach_detach_0" -> "anytree.tests.helper_0" [label="2"]
+	"anytree.iterators.levelorderiter_0" -> "anytree.search_0" [label="2"]
+	"anytree.resolver_0" -> "ntpath_0" [label="1"]
+	"anytree.exporter.dotexporter_0" -> "tempfile_0" [label="1"]
+	"anytree.tests.test_iterators_0" -> "anytree.iterators.levelordergroupiter.LevelOrderGroupIter_0" [label="6"]
+	"anytree.tests.test_special_methods_access_0" -> "anytree.node.nodemixin_0" [label="1"]
+	"anytree.tests.test_jsonexporter_0" -> "anytree.exporter.jsonexporter_0" [label="1"]
+	"anytree.exporter.mermaidexporter.MermaidExporter_0" -> "anytree.exporter.mermaidexporter_0" [label="1"]
+	"anytree.tests.test_node_0" -> "anytree.tests.test_mermaidexporter_0" [label="1"]
+	"anytree.render.RenderTree_0" -> "anytree.exporter.mermaidexporter_0" [label="1"]
+	"anytree.tests.test_node_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.resolver_0" -> "anytree.tests.test_dictimporter_0" [label="1"]
+	"anytree.tests.test_lightnode_0" -> "anytree.tests.test_mermaidexporter_0" [label="1"]
+	"anytree.tests.test_node.EqOverwrittingNode_0" -> "anytree.tests.test_node_0" [label="1"]
+	"anytree.tests.test_resolver_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.tests.test_uniquedotexporter_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.tests.test_examples_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.search_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.tests.test_node_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.tests.test_lightnode_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.node.lightnodemixin_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.render_0" -> "anytree.tests.test_dictimporter_0" [label="1"]
+	"anytree.render_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.walker_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.tests.test_render_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.tests.test_node_attach_detach_0" -> "anytree.tests.test_mermaidexporter_0" [label="1"]
+	"anytree.tests.test_node_sep_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.resolver_0" -> "anytree.tests.test_node_0" [label="1"]
+	"anytree.importer.dictimporter_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.exporter.dotexporter.DotExporter_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.tests.test_cachedsearch_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.tests.test_search_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.tests.test_dictexporter_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.exporter.dotexporter_0" -> "anytree.tests.test_dictimporter_0" [label="1"]
+	"anytree.tests.test_walker_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.tests.test_dictexporter_0" -> "anytree.tests.test_node_0" [label="1"]
+	"anytree.tests.test_node_integrity_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.walker_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.tests.test_special_methods_access_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.resolver_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.exporter.mermaidexporter_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.tests.test_lightnode_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.resolver.ChildResolverError_0" -> "anytree.tests.test_dictimporter_0" [label="1"]
+	"anytree.tests.test_util_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.tests.test_node.EqOverwrittingNode_0" -> "anytree.node.lightnodemixin_0" [label="1"]
+	"anytree.tests.test_pickle_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.exporter.mermaidexporter_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.tests.test_node_sep_0" -> "anytree.tests.test_dictimporter_0" [label="1"]
+	"anytree.node.node_0" -> "anytree.tests.test_dictimporter_0" [label="1"]
+	"anytree.exporter.dotexporter.DotExporter_0" -> "anytree.exporter.mermaidexporter_0" [label="1"]
+	"anytree.tests.test_iterators_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.render_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.exporter.dictexporter.DictExporter_0" -> "anytree.exporter.mermaidexporter_0" [label="1"]
+	"anytree.tests.test_render_0" -> "anytree.tests.test_dictimporter_0" [label="1"]
+	"anytree.exporter.mermaidexporter.MermaidExporter_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.tests.test_lightnode_0" -> "anytree.tests.test_lightnode_0" [label="1"]
+	"anytree.exporter.jsonexporter_0" -> "anytree.tests.test_dictimporter_0" [label="1"]
+	"anytree.tests.test_node_attach_detach_0" -> "anytree.tests.test_lightnode_0" [label="1"]
+	"anytree.tests.test_dictimporter_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.iterators.abstractiter_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.node.node.Node_0" -> "anytree.node.lightnodemixin_0" [label="1"]
+	"anytree.iterators.abstractiter.AbstractIter_0" -> "anytree.exporter.mermaidexporter_0" [label="1"]
+	"anytree.search_0" -> "anytree.tests.test_dictimporter_0" [label="1"]
+	"anytree.tests.test_dotexport_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.tests.test_node_0" -> "anytree.tests.test_node_0" [label="1"]
+	"anytree.tests.test_special_methods_access_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.tests.test_resolver_0" -> "anytree.tests.test_dictimporter_0" [label="1"]
+	"anytree.tests.test_jsonexporter_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.node.nodemixin_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.exporter.dotexporter_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.render.RenderTree_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.node.lightnodemixin_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.exporter.mermaidexporter.MermaidExporter_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.node.util_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.tests.test_node_attach_detach_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.exporter.dotexporter_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.tests.test_node_0" -> "anytree.tests.test_node_attach_detach_0" [label="1"]
+	"anytree.tests.test_node_symlink_0" -> "anytree.tests.test_dictimporter_0" [label="1"]
+	"anytree.resolver_0" -> "anytree.tests.test_special_methods_access_0" [label="1"]
+	"anytree.node.lightnodemixin_0" -> "anytree.node.lightnodemixin_0" [label="1"]
+	"anytree.importer.jsonimporter_0" -> "anytree.tests.test_dictimporter_0" [label="1"]
+	"anytree.exporter.dotexporter.DotExporter_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.tests.test_lightnode.LightNode_0" -> "anytree.node.lightnodemixin_0" [label="1"]
+	"anytree.exporter.dictexporter_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.node.nodemixin_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.tests.test_node_symlink_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.resolver.ResolverError_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.exporter.jsonexporter.JsonExporter_0" -> "anytree.tests.test_dictimporter_0" [label="1"]
+	"anytree.exporter.dictexporter.DictExporter_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.tests.test_lightnode_0" -> "anytree.tests.test_node_0" [label="1"]
+	"anytree.util.__init___0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.tests.test_node_0" -> "anytree.tests.test_lightnode_0" [label="1"]
+	"anytree.tests.test_dotexporter_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.tests.test_dictimporter_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.tests.test_dictexporter.MyClass_0" -> "anytree.node.lightnodemixin_0" [label="1"]
+	"anytree.tests.test_render_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.tests.test_mermaidexporter_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.tests.test_special_methods_access.MyNode_0" -> "anytree.node.lightnodemixin_0" [label="1"]
+	"anytree.node.nodemixin_0" -> "anytree.node.lightnodemixin_0" [label="1"]
+	"anytree.tests.test_node_0" -> "anytree.tests.test_dictimporter_0" [label="1"]
+	"conftest_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.tests.test_jsonimporter_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.iterators.levelorderiter_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.node.symlinknode.SymlinkNode_0" -> "anytree.tests.test_dictimporter_0" [label="1"]
+	"anytree.tests.test_lightnode_0" -> "anytree.tests.test_dictimporter_0" [label="1"]
+	"anytree.tests.test_walker_0" -> "anytree.tests.test_dictimporter_0" [label="1"]
+	"anytree.render.AbstractStyle_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.iterators.levelordergroupiter_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.util.__init___0" -> "anytree.tests.test_resolver_0" [label="1"]
+	"anytree.tests.test_iterators_0" -> "anytree.tests.test_dictimporter_0" [label="1"]
+	"anytree.tests.test_dotexport_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.tests.test_jsonexporter_0" -> "anytree.tests.test_dictimporter_0" [label="1"]
+	"anytree.resolver_0" -> "anytree.node.lightnodemixin_0" [label="1"]
+	"anytree.tests.test_pickle_0" -> "anytree.tests.test_special_methods_access_0" [label="1"]
+	"anytree.resolver_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.iterators.abstractiter.AbstractIter_0" -> "anytree.tests.test_resolver_0" [label="1"]
+	"anytree.tests.test_dictexporter_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.render.RenderTree_0" -> "anytree.tests.test_resolver_0" [label="1"]
+	"anytree.exporter.jsonexporter_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.exporter.jsonexporter.JsonExporter_0" -> "anytree.exporter.mermaidexporter_0" [label="1"]
+	"anytree.tests.test_lightnode_0" -> "anytree.tests.test_node_attach_detach_0" [label="1"]
+	"anytree.walker_0" -> "anytree.tests.test_dictimporter_0" [label="1"]
+	"anytree.tests.test_special_methods_access.MyMapping_0" -> "anytree.node.lightnodemixin_0" [label="1"]
+	"anytree.exporter.dictexporter_0" -> "anytree.tests.test_cachedsearch_0" [label="1"]
+	"anytree.resolver.Resolver_0" -> "anytree.tests.test_dictimporter_0" [label="1"]
+	"anytree.tests.test_dictimporter_0" -> "anytree.tests.test_dictimporter_0" [label="1"]
+	"anytree.tests.test_node_integrity_0" -> "anytree.tests.test_mermaidexporter_0" [label="1"]
+	"anytree.importer.jsonimporter.JsonImporter_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.render.AbstractStyle_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.importer.jsonimporter_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.resolver.Resolver_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.exporter.dictexporter.DictExporter_0" -> "anytree.tests.test_walker_0" [label="1"]
+	"anytree.importer.dictimporter_0" -> "anytree.tests.test_dictimporter_0" [label="1"]
+	"anytree.iterators.preorderiter_0" -> "anytree.exporter.mermaidexporter_0" [label="1"]
 }

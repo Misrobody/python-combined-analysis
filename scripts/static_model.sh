@@ -1,80 +1,90 @@
 #!/bin/bash
 
+# Abort on undefined vars, pipefail, but allow manual exit handling
+set -u
+set -o pipefail
+
+# Colors
+RED='\033[31m'
+GREEN='\033[32m'
+RESET='\033[0m'
+
+# Usage check
 if [ "$#" -ne 3 ]; then
-    echo "Usage: command <input-dir> <mode> <out-name>"
-    exit 1
+  echo -e "${RED}Usage: $0 <input-dir> <mode> <out-name>${RESET}"
+  exit 1
 fi
 
-######################################
+INPUT_DIR="$1"
+MODE="$2"
+OUT_NAME="$3"
 
-NAME="bin/$3-static-model-$2"
-
+NAME="bin/${OUT_NAME}-static-model-${MODE}"
 SAR_OUTPUT_DIR="$NAME/sar"
 MVIS_OUTPUT_DIR="$NAME/mvis"
 
-mkdir -p "$NAME"
-mkdir -p "$SAR_OUTPUT_DIR"
-mkdir -p "$MVIS_OUTPUT_DIR"
-
+# Clean and prepare directories
+rm -rf "$NAME"/*
+mkdir -p "$SAR_OUTPUT_DIR" "$MVIS_OUTPUT_DIR"
 if [ $? -ne 0 ]; then
-  echo "Directory Creation failed. Exiting."
+  echo -e "${RED}Directory creation failed. Exiting.${RESET}"
   exit 1
 fi
 
-######################################
+echo -e "${GREEN}✔ Directories ready.${RESET}"
 
-# make the architecture model
-echo "make the architecture model"
-./tools/oceandsl-tools/bin/sar \
- -o "$SAR_OUTPUT_DIR" \
- -E "pyparse" \
- -g "$2" \
- -i "$1" \
- -m module-mode \
- -l "static"
-
+# Run SAR
+echo -e "${GREEN}▶ Running SAR...${RESET}"
+time ./tools/oceandsl-tools/bin/sar \
+  -o "$SAR_OUTPUT_DIR" \
+  -E "pyparse" \
+  -g "$MODE" \
+  -i "$INPUT_DIR" \
+  -m module-mode \
+  -l "static"
 if [ $? -ne 0 ]; then
-  echo "SAR command failed. Exiting."
+  echo -e "${RED}SAR command failed. Exiting.${RESET}"
   exit 1
 fi
 
-######################################
-
-# tweak the model
-echo "tweak the model"
-python3 python/convert.py "bin/$1-sar/type-model.xmi"
-
+# Convert model
+echo -e "${GREEN}▶ Converting model...${RESET}"
+time python3 python/convert.py "$SAR_OUTPUT_DIR/type-model.xmi"
 if [ $? -ne 0 ]; then
-  echo "Convert command failed. Exiting."
+  echo -e "${RED}Conversion failed. Exiting.${RESET}"
   exit 1
 fi
 
-######################################
-
-# make the graph
-echo "make the graph"
-./tools/oceandsl-tools/bin/mvis \
- -i "$SAR_OUTPUT_DIR" \
- -m add-nodes \
- -o "$MVIS_OUTPUT_DIR" \
- -s all \
- -g dot-component \
- -c num-of-calls op-coupling module-coupling
-
+# Visualize with MVIS
+echo -e "${GREEN}▶ Running MVIS...${RESET}"
+time ./tools/oceandsl-tools/bin/mvis \
+  -i "$SAR_OUTPUT_DIR" \
+  -m add-nodes \
+  -o "$MVIS_OUTPUT_DIR" \
+  -s all \
+  -g dot-component \
+  -c num-of-calls op-coupling module-coupling
 if [ $? -ne 0 ]; then
-  echo "MVIS command failed. Exiting."
+  echo -e "${RED}MVIS command failed. Exiting.${RESET}"
   exit 1
 fi
 
-######################################
+# Group graph
+echo -e "${GREEN}▶ Grouping graph...${RESET}"
+time python3 python/table.py "$MVIS_OUTPUT_DIR/sar-component.dot" "$MVIS_OUTPUT_DIR/output.dot"
+if [ $? -ne 0 ]; then
+  echo -e "${RED}Grouping failed. Exiting.${RESET}"
+  exit 1
+fi
 
-# convert the graph
-echo "convert the graph"
+# Convert .dot to PDF
+echo -e "${GREEN}▶ Generating PDF from .dot files...${RESET}"
 cd "$MVIS_OUTPUT_DIR"
-dot -T pdf *.dot -o output.pdf
+time fdp -Tpdf -o output.pdf -v output.dot 
+if [ $? -ne 0 ]; then
+  echo -e "${RED}FDP conversion failed. Exiting.${RESET}"
+  exit 1
+fi
 cd ../..
 
-if [ $? -ne 0 ]; then
-  echo "DOT command failed. Exiting."
-  exit 1
-fi
+echo -e "${GREEN}Done! Output PDF ready at: $MVIS_OUTPUT_DIR/output.pdf${RESET}"

@@ -98,10 +98,18 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
+# Group graph
+echo -e "${GREEN}▶ Grouping graph...${RESET}"
+time python3 python/table.py "$MVIS_COMBINED_DIR/mop_model-component.dot" "$MVIS_COMBINED_DIR/output.dot"
+if [ $? -ne 0 ]; then
+  echo -e "${RED}Grouping failed. Exiting.${RESET}"
+  exit 1
+fi
+
 # Convert .dot to PDF
 echo -e "${GREEN}▶ Generating PDF from .dot files...${RESET}"
 cd "$MVIS_COMBINED_DIR"
-time dot -Tpdf *.dot -o output.pdf -v
+time fdp -Tpdf output.dot -o output.pdf -v
 if [ $? -ne 0 ]; then
   echo -e "${RED}DOT conversion failed. Exiting.${RESET}"
   exit 1

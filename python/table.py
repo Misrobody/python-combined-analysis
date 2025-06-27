@@ -24,7 +24,8 @@ class ContainedGraph:
 
     def group_clusters(self):
         for node in self._nodes:   
-            l = (node.get_label() or "").replace("<<assembly component>>\npyparse.", "").strip('"').strip()
+            l = (node.get_label() or "").replace("<<assembly component>>\n", "").strip('"').strip()
+            print(l)
             node.set_label(l)
             name = node.get_name().strip('"')
             parts = name.split(".")
