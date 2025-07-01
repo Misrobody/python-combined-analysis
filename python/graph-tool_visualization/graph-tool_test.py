@@ -1,6 +1,9 @@
+"""
+Processes a flattened GraphML file from MVIS and renders it as a PDF using the graph-tool Python module.
+"""
+
 import sys, os
 from graph_tool.all import *
-import numpy as np
 
 def main():
     if len(sys.argv) != 2:
@@ -12,7 +15,6 @@ def main():
     pos = sfdp_layout(g, K=1.5)
     output_path = os.path.splitext(filename)[0] + "_graph.pdf"
 
-    
     graph_draw(
         g,
         pos=pos,
