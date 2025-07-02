@@ -1,11 +1,6 @@
 from tulip import tlp
 import sys
 
-def list_subgraphs(g, indent=0):
-    for sg in g.getSubGraphs():
-        print("  " * indent + "- " + sg.getName())
-        list_subgraphs(sg, indent + 1)
-
 class TulipGraph():
     def __init__(self, input, output):   
         self._input = input
@@ -22,11 +17,9 @@ class TulipGraph():
                 self._graph = self._import_graphml_graph()
             case _:
                 raise Exception("wrong filetype")
-            
+                   
         self._process_nodes()
         self._process_edges()
-        
-        list_subgraphs(self._graph, indent=4)
         
         #self._print_edge_properties()
         self._layout_graph()
@@ -46,9 +39,11 @@ class TulipGraph():
     def _process_edges(self):
         border_width = self._graph.getProperty("viewBorderWidth")
         color = self._graph.getProperty("viewColor")
+        font_size = self._graph.getProperty("viewFontSize")
         for edge in self._graph.getEdges():
             border_width[edge] = 5.0
             color[edge] = (133, 133, 133, 255)
+            font_size[edge] = self._fontsize
              
     def _import_dot_graph(self):
         params = tlp.getDefaultPluginParameters('graphviz')
@@ -62,18 +57,42 @@ class TulipGraph():
    
     def _export_graph(self):
         params = tlp.getDefaultPluginParameters("SVG Export", self._graph)
-        # set any input parameter value if needed
         params['edge color interpolation'] = False
         params['edge size interpolation'] = False
         params['edge extremities'] = True
         params['no background'] = True
-        params['makes SVG output human readable'] = True
+        params['makes SVG output human readable'] = False
         params['export edge labels'] = True
         params['export metanode labels'] = True
 
                 
         tlp.exportGraph("SVG Export", self._graph, self._output, params)
-        
+
+    #algorithm = "Fast Overlap Removal" #can be supplied a node border
+
+    #algorithm = "Circular"
+    #algorithm = "Circular (OGDF)"
+    
+    #algorithm = 'FM^3 (OGDF)'
+    #algorithm = "Stress Minimization (OGDF)" # works but bleh
+    #algorithm = "LinLog" # creuser poids
+    #params["edge weight"] = self._graph.getProperty("externLabel")
+    #algorithm = "Pivot MDS (OGDF)" # interessant
+    #algorithm = "Fast Multipole Embedder (OGDF)" #groups but spaced out
+    
+    #algorithm = "Dendrogram"
+    #algorithm = "Sugiyama (OGDF)" # SUPER CLAIR ET HIERARCHIQUE
+    #algorithm = "Hierarchical Tree (R-T Extended)" # interessant
+    #params = tlp.getDefaultPluginParameters(algorithm, self._graph)
+    #params["layer spacing"] = 300
+    
+    def _layout_graph(self):       
+        algorithm = "Sugiyama (OGDF)"
+        params = tlp.getDefaultPluginParameters(algorithm, self._graph)
+        self._graph.applyLayoutAlgorithm(algorithm, params)
+    
+
+    '''    
     def _layout_graph(self):
         params = tlp.getDefaultPluginParameters('FM^3 (OGDF)', self._graph)
         #params['edge length property'] = self._graph.getSizeProperty("viewSize")
@@ -99,7 +118,7 @@ class TulipGraph():
 
         resultLayout = self._graph.getLayoutProperty("viewLayout")
         self._graph.applyLayoutAlgorithm('FM^3 (OGDF)', resultLayout, params)
-   
+    '''
     def _format_label(self, label):
         return label.replace("<<assembly component>>\n", "").strip('"').strip()
 
