@@ -66,7 +66,7 @@ fi
 
 # Convert model
 echo -e "${GREEN}▶ Converting model...${RESET}"
-time python3 python/convert.py "$SAR_OUTPUT_DIR/type-model.xmi"
+time python3 python/convert_sar2dar_model.py "$SAR_OUTPUT_DIR/type-model.xmi"
 if [ $? -ne 0 ]; then
   echo -e "${RED}Conversion failed. Exiting.${RESET}"
   exit 1
@@ -100,7 +100,7 @@ fi
 
 # Group graph
 echo -e "${GREEN}▶ Grouping graph...${RESET}"
-time python3 python/table.py "$MVIS_COMBINED_DIR/mop_model-component.dot" "$MVIS_COMBINED_DIR/output.dot"
+time python3 python/dot_visualization/ClusteredDotGraph.py "$MVIS_COMBINED_DIR/mop_model-component.dot" "$MVIS_COMBINED_DIR/output.dot"
 if [ $? -ne 0 ]; then
   echo -e "${RED}Grouping failed. Exiting.${RESET}"
   exit 1

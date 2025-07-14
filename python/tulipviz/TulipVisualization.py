@@ -14,31 +14,33 @@ class TulipVisualization:
         self._output = output
         self._fontsize = 8
         self._markersize = 10
+        self._boxes = {}
                 
         tlp.initTulipLib()
         tlp.loadPlugins()   
         self._graph = self._import_dot_graph()
         self._process_nodes()
         self._process_edges()
-        self._grouper.group_graph(self._graph)                              
-                 
-        #self._set_metanodes()
-        #self._process_metanodes()
+        self._grouper.group_graph(self._graph) 
+        self._grouper.print_nodes()                             
        
         print_subgraph_hierarchy(self._graph, nodes=False) 
-        #print_metagraph(self._graph) 
-        
-        self._graph.getLayoutProperty("altLayout")
+      
+        self._alt = self._graph.getLayoutProperty("altLayout")
+        self._view = self._graph.getLayoutProperty("viewLayout")
         
         self._layout_graph()  
         
         self._export_graph()
         self._process_svg()
         
-        print_node_properties(self._graph)
-        print_graph_properties(self._graph)
-        print_graph_property(self._graph, "altLayout")
-        print_node_properties(self._graph)
+        print(self._boxes)
+        
+        #print_node_properties(self._graph)
+        #print_graph_properties(self._graph)
+        #print_graph_property(self._graph, "altLayout")
+        print_node_properties(self._graph, node_index=3)
+        
                   
     def _format_label(self, label):
         return label.replace("<<assembly component>>\n", "").strip('"').strip()              
@@ -47,25 +49,14 @@ class TulipVisualization:
         size = self._graph.getProperty("viewSize")
         label = self._graph.getProperty("viewLabel")
         border_width = self._graph.getProperty("viewBorderWidth")
+        shape = self._graph.getIntegerProperty('viewShape')
         
         for node in self._graph.getNodes():
             label[node] = self._format_label(label[node])
             size[node] = tlp.Size((len(label[node])) * self._fontsize, 5 * self._fontsize, 0)
             border_width[node] = 5.0
-            
-    def _set_metanodes(self):
-        algorithm = "Quotient Clustering"
-        params = tlp.getDefaultPluginParameters(algorithm, self._graph)
-        params['directed'] = True
-        params['node function'] = "none"
-        params['edge function'] = "none"
-        params['use name of subgraph'] = True
-        params['recursive'] = True
-        params['layout quotient graph(s)'] = False
-        params['layout clusters'] = False
-        params['edge cardinality'] = False
-        self._graph.applyAlgorithm(algorithm, params)  
-            
+            shape[node] = tlp.NodeShape.Square
+                     
     def _process_edges(self):
         border_width = self._graph.getProperty("viewBorderWidth")
         color = self._graph.getProperty("viewColor")
@@ -93,39 +84,57 @@ class TulipVisualization:
         pretty_print_svg(self._output, self._output)
         update_font_size(self._output, self._output, self._fontsize)
         update_marker_size(self._output, self._output, self._markersize)
-      
-    def _process_metanodes(self):
-        viewColor = self._graph.getColorProperty("viewColor")
-        light_gray = tlp.Color(211, 211, 211, 100)
-        for node in self._graph.getNodes():
-            if self._graph.isMetaNode(node):
-                viewColor[node] = light_gray           
-     
-    def _recursive_layout(self, graph):
-        #print(f"{graph.getName()}")
+          
+    def _bounding_box(self, subgraph):
+        box_node = bounding_box(self._graph, subgraph)
+        self._boxes[subgraph] = box_node
+        #self._graph.addNode(box_node)
+        if subgraph.getSuperGraph() != subgraph:
+            subgraph.getSuperGraph().addNode(box_node)
         
-        if "quotient of " in graph.getName():
-            pass
-        else:
-            self._fm3(graph)
-
+    def _bottom_up(self, graph):
         subgraphs = graph.getSubGraphs()
+        subgraph_list = []
         while subgraphs.hasNext():
-            subgraph = subgraphs.next()
-            self._recursive_layout(subgraph)         
+            subgraph_list.append(subgraphs.next())
+
+        for subgraph in subgraph_list:
+            self._bottom_up(subgraph)
+
+        #print(len(list(graph.getNodes())))
+        self._fm3(graph, self._alt)
+        self._fast_overlap_removal(graph, self._alt)
+        
+        direct_children = self._grouper.direct_nodes(graph)
+        for n in direct_children:
+            self._view[n] = self._alt[n]
+            
+        for s in subgraph_list:
+            #print(s)
+            if s in self._boxes.keys():
+                box = self._boxes[s]
+                #print(self._view[box])
+                #print(self._alt[box])
+                diff = self._alt[box] - self._view[box]
+                #print(diff)
+                self._view[box] = self._alt[box]
+                for n in s.getNodes():
+                    self._view[n] += diff
+                       
+        if graph.getSuperGraph() != graph:     
+            self._bounding_box(graph)
      
     def _layout_graph(self): 
-        #self._recursive_layout(self._graph)
-        g = get_subgraph(self._graph, 6)
-        self._fm3(g)
-        #bounding_box(self._graph, g)
+        #g = get_subgraph(self._graph, 6)
+        #self._graph.addNode()
+        #self._fm3(g)
+        #self._bounding_box(g)
+        self._bottom_up(self._graph)
+        self._curve_edges(self._graph)
+        self._edge_bundling(self._graph)
         
-
-     
-        
-        
-        
-    def _fm3(self, graph):
+           
+    def _fm3(self, graph, property):
         params = tlp.getDefaultPluginParameters('FM^3 (OGDF)', graph)
         # params['edge length property'] = ...
         # params['node size'] = ...
@@ -148,7 +157,27 @@ class TulipVisualization:
         # params['reduced tree construction'] = ...
         # params['smallest cell finding'] = ...
         # graph.applyLayoutAlgorithm('FM^3 (OGDF)', params)
-        resultLayout = graph.getLayoutProperty('viewLayout')
-        graph.applyLayoutAlgorithm('FM^3 (OGDF)', resultLayout, params)
+
+        graph.applyLayoutAlgorithm('FM^3 (OGDF)', property, params)
         print(f"layed out {graph.getName()}")
         
+    def _fast_overlap_removal(self, graph, property):
+        algorithm = "Fast Overlap Removal"
+        params = tlp.getDefaultPluginParameters(algorithm, graph)
+        params["initial layout"] = property
+        params["x border"] = 10
+        params["y border"] = 10
+        graph.applyLayoutAlgorithm(algorithm, property, params)
+        print(f"layed out {graph.getName()}")
+        
+    def _edge_bundling(self, graph):
+        algorithm = "Edge bundling"
+        params = tlp.getDefaultPluginParameters(algorithm, graph)
+        graph.applyAlgorithm(algorithm, params)
+        print(f"layed out {graph.getName()}")
+        
+    def _curve_edges(self, graph):
+        algorithm = "Curve edges"
+        params = tlp.getDefaultPluginParameters(algorithm, graph)
+        graph.applyAlgorithm(algorithm, params)
+        print(f"layed out {graph.getName()}")      

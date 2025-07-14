@@ -14,5 +14,7 @@ tools/oceandsl-tools/bin/mvis \
  -o "bin/$2" \
  -s all \
  -g graphml dot-component dot-op
+
+ 
 # -c (allen), num-of-calls, op-coupling, module-coupling
 # -s all      all-color:[label,...]:[label,...]         diff:[label,...]:[label,...]      subtract:[label,...]    intersect:[label,...]:[label,...]

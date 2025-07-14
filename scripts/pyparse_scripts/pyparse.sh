@@ -1,9 +1,9 @@
 #!/bin/bash
 
 time python3 tools/pyparse/src/pyparse/pyparse.py \
- -i apps/UXsim/ \
- -o data/uxsim/pyparse \
- -m $1 -e -v
+ -i ~/OtktDSL-examples/apps/numpy \
+ -o data/numpy/pyparse-newest \
+ -m both -e -v
 
 #time python3 tools/pyparse/src/pyparse/pyparse.py \
 # -i apps/anytree \

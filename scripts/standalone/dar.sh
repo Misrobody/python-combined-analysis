@@ -5,12 +5,12 @@ fi
 
 mkdir "bin/$1"
 
-./distrib/oceandsl-tools/bin/dar \
+./tools/oceandsl-tools/bin/dar \
 -l "dynamic" \
 -c \
 -o "bin/$1" \
 -s java \
 -m java-class-mode \
--E "anytree" \
--i "data/uxsim/" \
+-E "numpy" \
+-i "data/numpy/operation-execution-logs/" \
 
