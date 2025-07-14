@@ -99,9 +99,14 @@ def get_subgraph_name(graph, target_name):
 
     return None
 
-#####################################
+############### Bounding box ###############
   
 def bounding_box(parent_graph, subgraph):
+    '''
+    creates a new node representing the bounding box of the subgraph
+    puts it around the graph
+    add it to the supplied parent graph
+    '''
     if subgraph is None:
         raise ValueError("Subgraph is None — cannot compute bounding box.")
     
@@ -142,7 +147,7 @@ def bounding_box(parent_graph, subgraph):
     width = max_x - min_x
     height = max_y - min_y
 
-    # Create a new node and style
+    # Create a new node and style it
     box_node = parent_graph.addNode()
     layout[box_node] = tlp.Coord(center_x, center_y, 0)
     size[box_node] = tlp.Size(width, height, 1)
@@ -154,22 +159,3 @@ def bounding_box(parent_graph, subgraph):
     label_name[box_node] = subgraph.getName()
 
     return box_node
-
-####################
-     
-def bottom_up(graph, indent=0):
-    subgraphs = graph.getSubGraphs()
-    subgraph_list = []
-    while subgraphs.hasNext():
-        subgraph_list.append(subgraphs.next())
-
-    for subgraph in subgraph_list:
-        bottom_up(subgraph, indent + 1)
-
-    name = graph.getName() or "(unnamed)"
-    graph_id = graph.getId()
-    num_nodes = graph.numberOfNodes()
-    num_edges = graph.numberOfEdges()
-    indent_str = "  " * indent
-
-    print(f"{indent_str}- {name:<40} (ID: {graph_id:>3})  Nodes: {num_nodes:>4}  Edges: {num_edges:>4}")

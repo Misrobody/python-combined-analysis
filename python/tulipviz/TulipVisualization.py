@@ -21,10 +21,9 @@ class TulipVisualization:
         self._graph = self._import_dot_graph()
         self._process_nodes()
         self._process_edges()
-        self._grouper.group_graph(self._graph) 
-        self._grouper.print_nodes()                             
+        self._grouper.group_graph(self._graph)                          
        
-        print_subgraph_hierarchy(self._graph, nodes=False) 
+        #print_subgraph_hierarchy(self._graph, nodes=False) 
       
         self._alt = self._graph.getLayoutProperty("altLayout")
         self._view = self._graph.getLayoutProperty("viewLayout")
@@ -33,14 +32,6 @@ class TulipVisualization:
         
         self._export_graph()
         self._process_svg()
-        
-        print(self._boxes)
-        
-        #print_node_properties(self._graph)
-        #print_graph_properties(self._graph)
-        #print_graph_property(self._graph, "altLayout")
-        print_node_properties(self._graph, node_index=3)
-        
                   
     def _format_label(self, label):
         return label.replace("<<assembly component>>\n", "").strip('"').strip()              
@@ -88,7 +79,6 @@ class TulipVisualization:
     def _bounding_box(self, subgraph):
         box_node = bounding_box(self._graph, subgraph)
         self._boxes[subgraph] = box_node
-        #self._graph.addNode(box_node)
         if subgraph.getSuperGraph() != subgraph:
             subgraph.getSuperGraph().addNode(box_node)
         
@@ -101,7 +91,6 @@ class TulipVisualization:
         for subgraph in subgraph_list:
             self._bottom_up(subgraph)
 
-        #print(len(list(graph.getNodes())))
         self._fm3(graph, self._alt)
         self._fast_overlap_removal(graph, self._alt)
         
@@ -110,13 +99,9 @@ class TulipVisualization:
             self._view[n] = self._alt[n]
             
         for s in subgraph_list:
-            #print(s)
             if s in self._boxes.keys():
                 box = self._boxes[s]
-                #print(self._view[box])
-                #print(self._alt[box])
                 diff = self._alt[box] - self._view[box]
-                #print(diff)
                 self._view[box] = self._alt[box]
                 for n in s.getNodes():
                     self._view[n] += diff
@@ -125,41 +110,14 @@ class TulipVisualization:
             self._bounding_box(graph)
      
     def _layout_graph(self): 
-        #g = get_subgraph(self._graph, 6)
-        #self._graph.addNode()
-        #self._fm3(g)
-        #self._bounding_box(g)
         self._bottom_up(self._graph)
         self._curve_edges(self._graph)
         self._edge_bundling(self._graph)
-        
-           
+                  
     def _fm3(self, graph, property):
         params = tlp.getDefaultPluginParameters('FM^3 (OGDF)', graph)
-        # params['edge length property'] = ...
-        # params['node size'] = ...
-        # params['unit edge length'] = ...
         params['new initial layout'] = False
-        # params['fixed iterations'] = ...
-        # params['threshold'] = ...
-        # params['page format'] = ...
-        # params['quality vs speed'] = ...
-        # params['edge length measurement'] = ...
-        # params['allowed positions'] = ...
-        # params['tip over'] = ...
-        # params['presort'] = ...
-        # params['galaxy choice'] = ...
-        # params['max iterations change'] = ...
-        # params['initial layout'] = ...
-        # params['force model'] = ...
-        # params['repulsive force method'] = ...
-        # params['initial layout forces'] = ...
-        # params['reduced tree construction'] = ...
-        # params['smallest cell finding'] = ...
-        # graph.applyLayoutAlgorithm('FM^3 (OGDF)', params)
-
         graph.applyLayoutAlgorithm('FM^3 (OGDF)', property, params)
-        print(f"layed out {graph.getName()}")
         
     def _fast_overlap_removal(self, graph, property):
         algorithm = "Fast Overlap Removal"
@@ -168,16 +126,13 @@ class TulipVisualization:
         params["x border"] = 10
         params["y border"] = 10
         graph.applyLayoutAlgorithm(algorithm, property, params)
-        print(f"layed out {graph.getName()}")
         
     def _edge_bundling(self, graph):
         algorithm = "Edge bundling"
         params = tlp.getDefaultPluginParameters(algorithm, graph)
         graph.applyAlgorithm(algorithm, params)
-        print(f"layed out {graph.getName()}")
         
     def _curve_edges(self, graph):
         algorithm = "Curve edges"
         params = tlp.getDefaultPluginParameters(algorithm, graph)
-        graph.applyAlgorithm(algorithm, params)
-        print(f"layed out {graph.getName()}")      
+        graph.applyAlgorithm(algorithm, params)    
