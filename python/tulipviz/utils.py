@@ -110,13 +110,11 @@ def bounding_box(parent_graph, subgraph):
     if subgraph is None:
         raise ValueError("Subgraph is None — cannot compute bounding box.")
     
-    label_name = parent_graph.getProperty("viewLabel")
-    label_color = parent_graph.getProperty("viewLabelColor")
+    label_name = parent_graph.getProperty("externLabel")
     layout = parent_graph.getLayoutProperty('viewLayout')
     size = parent_graph.getSizeProperty('viewSize')
     color = parent_graph.getColorProperty('viewColor')
     shape = parent_graph.getIntegerProperty('viewShape')
-    label = parent_graph.getIntegerProperty("viewLabelPosition")
     border_width = parent_graph.getProperty("viewBorderWidth")
 
     # Compute bounding box of all nodes in the subgraph
@@ -139,7 +137,7 @@ def bounding_box(parent_graph, subgraph):
     min_x -= padding
     max_x += padding
     min_y -= padding
-    max_y += padding
+    max_y += padding * 2
 
     # Compute bounding box center and dimensions
     center_x = (min_x + max_x) / 2
@@ -151,10 +149,8 @@ def bounding_box(parent_graph, subgraph):
     box_node = parent_graph.addNode()
     layout[box_node] = tlp.Coord(center_x, center_y, 0)
     size[box_node] = tlp.Size(width, height, 1)
-    label[box_node] = 2
     border_width[box_node] = 5
-    label_color[box_node] = tlp.Color(0, 0, 255, 255)
-    color[box_node] = tlp.Color(255, 0, 0, 10)
+    color[box_node] = tlp.Color(255, 0, 0, 15)
     shape[box_node] = tlp.NodeShape.Square
     label_name[box_node] = subgraph.getName()
 
