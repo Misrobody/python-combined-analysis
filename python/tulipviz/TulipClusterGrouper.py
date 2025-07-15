@@ -11,18 +11,19 @@ class TulipClusterGrouper:
         self._out = tlp.newGraph()
         self._clusters = {}
         self._nodes = defaultdict(list)
-        self._boxes = {}
+        
+    def preprocess_node_labels(self, graph):
+        viewLabel = graph.getProperty("viewLabel")
+        for node in graph.getNodes():
+            viewLabel[node] = viewLabel[node].replace("<<assembly component>>\n", "").strip('"').strip()
                                 
     def group_graph(self, graph):
+        self.preprocess_node_labels(graph)
         self.group_clusters(graph)
-        self.relocate_edges(graph)
-            
-    def _bounding_box(self, subgraph):
-        box_node = bounding_box(self._graph, subgraph)
-        self._boxes[subgraph] = box_node    
+        self.relocate_edges(graph) 
                              
     def group_clusters(self, graph):
-        label_prop = graph.getStringProperty("viewLabel")
+        label_prop = graph.getStringProperty("viewLabel")        
         for node in graph.getNodes():
             parts = label_prop[node].split(".")
             parent = graph
@@ -84,9 +85,6 @@ class TulipClusterGrouper:
         
     def direct_nodes(self, graph):
         return self._nodes[graph]
-    
-    def bounding_box(self, graph):
-        return self._boxes[graph]
             
             
                 
