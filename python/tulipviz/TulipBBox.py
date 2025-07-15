@@ -32,7 +32,7 @@ class TulipBBox:
         if subgraph is None:
             raise ValueError("Subgraph is None — cannot create bounding box.")
         parent_graph = subgraph.getSuperGraph()
-        label_name = parent_graph.getProperty("externLabel")
+        label_name = parent_graph.getProperty("bboxLabel")
         layout = parent_graph.getLayoutProperty('viewLayout')
         size = parent_graph.getSizeProperty('viewSize')
         color = parent_graph.getColorProperty('viewColor')
@@ -42,6 +42,7 @@ class TulipBBox:
         coords = self.compute_bbox(subgraph)
 
         box_node = parent_graph.addNode()
+        
         layout[box_node] = tlp.Coord(coords["center_x"], coords["center_y"], 0)
         size[box_node] = tlp.Size(coords["width"], coords["height"], 1)
         border_width[box_node] = 5
@@ -104,3 +105,4 @@ class TulipBBox:
             "width": width,
             "height": height}
         return res
+    

@@ -17,7 +17,6 @@ class TulipStyler:
         viewColor = graph.getProperty("viewColor")
         
         for node in graph.getNodes():
-            viewLabel[node] = viewLabel[node].replace("<<assembly component>>\n", "").strip('"').strip()
             viewSize[node] = tlp.Size((len(viewLabel[node])) * self._fontsize, 5 * self._fontsize, 0)
             viewBorderWidth[node] = 5.0
             viewShape[node] = tlp.NodeShape.Square
@@ -38,7 +37,7 @@ class TulipStyler:
         viewLabel = graph.getProperty("viewLabel")
         viewShape = graph.getProperty("viewShape")
         viewColor = graph.getProperty("viewColor")
-        externLabel = graph.getProperty("externLabel")   
+        externLabel = graph.getProperty("bboxLabel")   
         bbox = graph.getProperty("isBoundingBox")      
                       
         for node in graph.getNodes():

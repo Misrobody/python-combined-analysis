@@ -19,16 +19,17 @@ class TulipVisualization:
         
         #import 
         self._graph = self._importer.graph
-        
+
         # properties
         self._alt = self._graph.getLayoutProperty("altLayout")
         self._bbox = self._graph.getBooleanProperty("isBoundingBox")
         self._view = self._graph.getLayoutProperty("viewLayout")
+        self._hoy = self._graph.getStringProperty("bboxLabel")
                
         # group graph
         self._styler.style_graph(self._graph)
         self._grouper.group_graph(self._graph)
-          
+                   
         # layout
         self._bottom_up(self._graph)
         self._curve_edges(self._graph)
@@ -71,7 +72,16 @@ class TulipVisualization:
     def _fm3(self, graph, property):
         params = tlp.getDefaultPluginParameters('FM^3 (OGDF)', graph)
         params['new initial layout'] = False
+        params['edge length measurement'] = "midpoint"
+        params['allowed positions'] = "all"
         graph.applyLayoutAlgorithm('FM^3 (OGDF)', property, params)
+        
+    def _sugiyama(self, graph, property):
+        algorithm = "Sugiyama (OGDF)"
+        params = tlp.getDefaultPluginParameters(algorithm, graph)
+        params['node distance'] = 6
+        params['layer distance'] = 6
+        graph.applyLayoutAlgorithm(algorithm, property, params)
         
     def _fast_overlap_removal(self, graph, property):
         algorithm = "Fast Overlap Removal"
