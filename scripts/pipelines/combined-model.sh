@@ -63,29 +63,24 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-
 # Convert model
 echo -e "${GREEN}▶ Converting model...${RESET}"
-time python3 python/convert_sar2dar_model.py "$SAR_OUTPUT_DIR/type-model.xmi"
+python3 python/convert_sar2dar_model.py "$SAR_OUTPUT_DIR/type-model.xmi"
 if [ $? -ne 0 ]; then
   echo -e "${RED}Conversion failed. Exiting.${RESET}"
   exit 1
 fi
 
 # Merge models
+# Somehow, mop always fails but still finishes
 echo -e "${GREEN}▶ Merging models with MOP...${RESET}"
 time tools/oceandsl-tools/bin/mop \
   -i "$DAR_OUTPUT_DIR" "$SAR_OUTPUT_DIR" \
   -o "$MOP_OUTPUT_DIR" \
   -e "" \
   merge
-# Somehow, mop always fails
-#if [ $? -ne 0 ]; then
-#  echo -e "${RED}MOP command failed. Exiting.${RESET}"
-#  exit 1
-#fi
 
-# Visualize
+# Convert model to graph description
 echo -e "${GREEN}▶ Running MVIS...${RESET}"
 time tools/oceandsl-tools/bin/mvis \
   -i "$MOP_OUTPUT_DIR" \
@@ -98,22 +93,14 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-# Group graph
-echo -e "${GREEN}▶ Grouping graph...${RESET}"
-time python3 python/dot_visualization/ClusteredDotGraph.py "$MVIS_COMBINED_DIR/mop_model-component.dot" "$MVIS_COMBINED_DIR/output.dot"
+# Visualize graph
+echo -e "${GREEN}▶ Visualizing graph...${RESET}"
+time python3 tools/grouped-graph-visualizer/main.py -i "$MVIS_COMBINED_DIR/mop_model-component.dot" -o "$MVIS_COMBINED_DIR/output.svg" -m "tulip"
 if [ $? -ne 0 ]; then
-  echo -e "${RED}Grouping failed. Exiting.${RESET}"
+  echo -e "${RED}Visualization failed. Exiting.${RESET}"
   exit 1
 fi
 
-# Convert .dot to PDF
-echo -e "${GREEN}▶ Generating PDF from .dot files...${RESET}"
-cd "$MVIS_COMBINED_DIR"
-time fdp -Tpdf output.dot -o output.pdf -v
-if [ $? -ne 0 ]; then
-  echo -e "${RED}DOT conversion failed. Exiting.${RESET}"
-  exit 1
-fi
 cd ../..
 
 echo -e "${GREEN}Done! Output PDF ready at: $MVIS_COMBINED_DIR/output.pdf${RESET}"
