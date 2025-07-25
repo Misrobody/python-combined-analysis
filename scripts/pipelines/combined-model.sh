@@ -95,7 +95,7 @@ fi
 
 # Visualize graph
 echo -e "${GREEN}▶ Visualizing graph...${RESET}"
-time python3 tools/grouped-graph-visualizer/main.py -i "$MVIS_COMBINED_DIR/mop_model-component.dot" -o "$MVIS_COMBINED_DIR/output.svg" -m "tulip"
+time python3 tools/grouped-graph-visualizer/main.py -i "$MVIS_COMBINED_DIR/mop_model-component.dot" -o "$MVIS_COMBINED_DIR/output.svg" -m "tulip" > $LOG_OUTPUT_DIR/tulip.log
 if [ $? -ne 0 ]; then
   echo -e "${RED}Visualization failed. Exiting.${RESET}"
   exit 1
